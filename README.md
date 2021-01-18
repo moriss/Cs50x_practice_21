@@ -13,6 +13,8 @@
 
 //My code won't be perfect and I welcome feedback from others. (If I don't get feedback then how can I learn?)
 
+//My explanations may not be accurate but they have helped me to understand every step of my code.
+
 //I try, whenever I can, to run a program in main then run the same program with my own function. This isn't alwys straight forward and is well worth the practice. I am particularly thinking about the 'swap' task.
 
 //Anyway, I hope beginners have a go and find this useful.
