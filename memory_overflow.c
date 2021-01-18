@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <unistd.h>
-// Multiply exponentially with a one second interval per integer
+// Multiply exponentially with a one second intervals per integer
 
 int main (void)
 {
@@ -25,8 +25,7 @@ int main (void)
 #include <stdlib.h>
 #include <ctype.h>
 #include <unistd.h>
-// Multiply exponentially with a one second interval per integer
-//Then try with your own program
+//Now try with your own program
 void my(int x);//Function prototype
 int main (void)
 {
@@ -53,8 +52,7 @@ void my(int x)//'x' is the input of 'my' variable.
 #include <stdlib.h>
 #include <ctype.h>
 #include <unistd.h>
-// Multiply exponentially with a one second interval per integer
-//Then try with your own program
+//Now with a 'return' value
 int my(int x);//Function prototype
 int main (void)
 {
