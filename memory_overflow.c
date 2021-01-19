@@ -6,7 +6,6 @@
 #include <ctype.h>
 #include <unistd.h>
 // Multiply exponentially with a one second intervals per integer
-
 int main (void)
 {
   int start = 1;//Set start to 1

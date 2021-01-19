@@ -6,7 +6,6 @@
 #include <ctype.h>
 #include <unistd.h>
 //Check if a user's input is an even integer using modulo
-
 int main (void)
 {
   int user = get_int("Enter a number: ");//Get an integer from the user

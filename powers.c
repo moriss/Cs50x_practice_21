@@ -6,7 +6,6 @@
 #include <ctype.h>
 #include <unistd.h>
 //Raise the base number to a power using pow()
-
 int main (void)
 {
   float base = get_float("Enter a base number: ");//Get a base  number from the user

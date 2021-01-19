@@ -6,7 +6,6 @@
 #include <ctype.h>
 #include <unistd.h>
 //Calculate the square root of a number
-
 int main (void)
 {
     double number = get_double("Enter a number to find its square root: ");
