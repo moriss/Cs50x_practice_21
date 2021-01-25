@@ -1,77 +1,91 @@
 ######################################
-? :  = the terinary operator
-(question mark then colon)
-normally used as a trick which simulates a simple if/else
+//? :  = the terinary operator
+// simulates a simple if/else
 
-here it is!
+//Example
 
-int x = (x < 3)  ? 5 : 6;
-so it's 5, if the experession is true and 6 if the expression is false.
+int x = (x < 3)  ? 5 : 6;//Declare that x is less than '3'. 5 is printed if true, 6 is printed if false.
 
-
-ANd example is below
 #include <ctype.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <math.h>
-
+//1. Create a scenario where you would use the ternary operator.
 int main(void)
 {
- int x = 5;
- x = (x < 3)  ? 5 : 6;
- printf("%i",x);
+ int x = 5;//Set 'x' to 5
+ x = (x < 3)  ? 5 : 6;//Test if less than 3 or not
+ printf("%i",x);//Display answer onscreen
 }
+//so it's 5, if the experession is true (less than 3) and 6 if the expression is false.
 
 //#####################################################
-#include <cs50.h> //Switch
+#include <cs50.h> 
 #include <stdio.h>//
 #include <string.h>
 #include <ctype.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <math.h>
-
-//1. Create a scenario where you would use the ternary operator.
 //2. Now create your own program to do the same with void intputs and void outputs.
+void my(void);//The prototype of your function
+int main (void)
+{
+    my();//No inputs here
+}    
+    
+    void my(void)//My function. void output, void input
+    {
+    int x = get_int("Enter a number: ");//This time we are taking user input rather than hard coding a number of our choosing.
+    x = (x < 5)  ?  5 : 6; 
+    printf("%i\n", x);
+	//Program doesn't return anything
+    }
+
+//###############################################################
+
+#include <cs50.h>
+#include <stdio.h>//
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <math.h>
 //3. Now with a void output but an input.
 void my(int x);
 int main (void)
 {
     int nmber = get_int ("Enter a number: ");//Take user input
-    my(nmber);
+    my(nmber);//use 'nmber' as an input to your program below
 }    
     
     void my(int x)
     {
-    
-    x = (x < 5)  ?  5 : 6; //Declare that 'x' is less than 5. If true, x is 5, else, x is 6
+    x = (x < 5)  ?  5 : 6; 
     printf("%i\n", x);
-
+	//Program doesn't return anything
     }
+	
 //###############################################################
-#include <cs50.h> //Switch
+
+#include <cs50.h>
 #include <stdio.h>//
 #include <string.h>
 #include <ctype.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <math.h>
-
-//1. Create a scenario where you would use the ternary operator.
-//2. Now create your own program to do the same with void intputs and void outputs.
-//3. Now with a void output but an input.
 //4. Now with an input and and output.
 int my(int x);
 int main (void)
 {
-    int nmber = get_int ("Enter a number: ");//Take user input
-    my(nmber);
+    int nmber = get_int ("Enter a number: ");
+    my(nmber);// Input is whatever the user typed above.
 }    
     
     int my(int x)
-    {
-    
-    x = (x < 5)  ?  5 : 6; //Declare that 'x' is less than 5. If true, x is 5, else, x is 6
+    {   
+    x = (x < 5)  ?  5 : 6; 
     printf("%i\n", x);
-    return 0;
+    return 0;//This is the ouput
     }
