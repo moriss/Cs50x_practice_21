@@ -67,7 +67,29 @@ int main (void)
     }
 	
 //###############################################################
+#include <cs50.h> //Switch
+#include <stdio.h>//
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <math.h>
+//3. Now with an output but no input. 
+int my(void);
+int main (void)
+{
+    printf("%i ", my());
+}
+    
+    int my(void)
+    {
+        int x = 5;
+        x = (x < 5) ? 5 : 6;
+        return x;
+        
+    }
 
+//#############################################################
 #include <cs50.h>
 #include <stdio.h>//
 #include <string.h>
