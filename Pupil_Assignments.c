@@ -1,0 +1,79 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <ctype.h>
+//add up total scores of user's assignments.
+int main(void)
+{
+   int b;
+   int n = get_int("Number of assignments: ");//Get Assignmet number from user
+   int scores[n];//Put this number into an array
+   int count = 0;//Set your counter variable
+   for (int i = 0; i < n; i ++)//loop through each element
+   {
+     scores[i] = get_int("Score %i ", i + 1);//Get individual user score at each ittiration. add +1 to i so it starts at 1
+     count = count + scores[i];//Counts value increases at each ittiration, unless there is a score of zero.
+     
+   }
+   printf("%i ", count);//Print total compbined scores.
+}
+
+//##################################################
+
+//Do same with your own function this time.
+void my(int n);//Function's prototype
+int main (void)
+{
+   int g = get_int("Number of Assignments ");//'g' takes user's value
+   my(g);//pass 'g' into your function.
+}
+
+   void my(int n)//This function takes input but gives no output
+   {
+      int assigns[n];//Setting up 'n' as an array.
+      int count = 0;//Use this to add up each assignment's score.
+      for(int i = 1; i <= n; i ++)
+   {
+	   assigns[i] = get_int("Score %i ", i);//Ask user for score at each ittiration.
+	   count = count + assigns[i];//Count up the total overall scores.
+   }
+      printf("%i \n", count);
+   }
+//##########################################################
+//Declare total assignment score with hard-coded integers.
+int main (void)
+{
+      int assigns[4]= {34,43,34,43};//hardcoded scores ('shorthand')
+      int count = 0;//Use this to add up each assignment's score.
+      for(int i = 0; i < 4; i ++)
+   {
+	   count = count + assigns[i];//Count up the total overall scores.
+   }
+      printf("%i \n", count);
+}
+//##########################################################
+//Declare using hard-coded integers AND without use of a loop.
+
+int main (void)
+{
+      int assigns[4]= {34,43,34,43};//'SHORTHAND VERSION'  
+      
+      printf("%i \n",  (assigns[0] + assigns[1] + assigns[2] + assigns[3]));
+}
+
+//########################################################
+//Calculate average score, making use of a constant
+
+const int N  = 3;// Hardcodging and making it global,only usually good for constants. (in capitals by convention)
+int main(void)
+{
+   int scores[N];
+   scores[0] =56;//('long hand' way to declare an array)
+   scores[1] =43;
+   scores[2] =21;
+   printf("Average= %i \n", (scores[0] + scores[1] + scores[2]) / N);
+}
+//NOTE; WHen using the 'shorthand' version of this code, it can't take constant 'N' as input, as it does here. Instead you either need to leave it blank, or input the correct size of the array. 
+//################################################################
