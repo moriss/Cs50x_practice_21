@@ -1,0 +1,158 @@
+Error checker
+
+Often, you forget to place a comma after datatype placeholder and variable name. EG: printf("%li \n" , credit);
+
+float and get_int.
+very common to set a datatype as a float and when you want input from the user, you automatically type get_int instead of get_float.
+
+
+
+PRINTING LONG NUMBERS
+You don't need an array or loop to print out a credit card number 
+
+eg:
+int main (void)
+{
+    long credit = get_long("Number");
+    
+        printf("%li" , credit);
+}
+//This simply prints out the number you have inputed
+//Working your way through the numbers can be done with modulo and division.
+
+
+STOPPED HERE
+//##########################################################
+When using constants, they can't be added to abbreviated arrays such as below.(error! variable-sized object may not be initialized).
+HOWEVER, N in assigns can be replaced with number of variables (in the case below, '3', or it can be left blank altogether.
+const int N = 3;
+int main (void)
+{
+      int assigns[N] {43, 34, 43};
+      
+      printf("%i \n",  (assigns[0] + assigns[1] + assigns[2]) / N);
+}
+
+IT DOES, HOWEVER WORK IN THE EXAMPLE BELOW WHERE ARRAYS ARE LAYED OUT AND ITEMISED THUS.
+const int N = 3;
+int main (void)
+{
+      int assigns[N];
+      assigns[0] = 43;
+      assigns[1] = 33;
+      assigns[2] = 49;
+      
+      printf("%i \n",  (assigns[0] + assigns[1] + assigns[2]) / N);
+}
+
+
+#################################################################
+
+user input from the command line.
+int main(int argc, string argv[]
+'int argc counts the number of strings (arrays of strings).
+'int argv stores the string values in an array (square brackets required to ensure it string argv is indeed an array.
+The first value/string of the array is the name of the file <./hello>.
+
+
+My speak:'Applying attributes to variables'
+a = (a < 5)
+'You need to 'go round the block' when attributing a new value to a variable.' You can't just all of a sudden say a < 5. You must first take a then a again, then the new value that is applied to it. it takes the form a = ( a    )
+
+
+
+*SEGMENTATION FAULTS*
+
+3) Segmentation fault with hard coded variables.
+
+IN this example, seg fault is returned because you hardcoded *one.
+This seg fault is elimenated when you change 
+char *one = "ivy" to 
+char *one = get_string("String: ); (I don't know why)
+
+ {
+   char *one = "Ivy";
+   char *two = one;
+   one[0] = toupper(one[0]);
+   printf("%s\n",one);
+   printf("%s\n",two);
+
+}
+
+2) Can happen if you ommit [i] within a for loop condition.
+Example below:
+***if(!isdigit(a[i]))***It needs the [i] which can be ofter missed
+bool check_digit(string a)
+{
+    for (int i = 0; i < strlen(a); i ++)
+    {
+        if(!isdigit(a[i]))
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+
+
+
+1) Can happen when you haven't added a return value.
+
+Example below :
+The 'return 1;' at 'else', stops the program running since a certain condition is 
+not met.
+If you ommit 'return 1; here, you get a warning 'segmentation fault'.
+
+###############################################
+int main(int argc, string argv[])
+{
+   if (argc == 2  )
+   {
+      char* plain_text = get_string("plaintext: ");
+   }
+
+   else
+   {
+       printf("Error! PLEASE RE-ENTER\n");
+       return 1;
+   }
+   int k = atoi(argv[1]);
+   while (k < 1)
+   {
+       printf("Usage: ./caesar key\n");
+   }
+
+   while (k > 26)
+   {
+      k =  k % 26;
+   }
+}
+################################################
+
+
+
+
+
+
+
+
+
+
+
+
+int main(void)//create two pointers that point to the same char
+
+{
+   string nim = get_string("name:");
+   string nib = nim;
+   nim[0] = toupper(nim[0]);
+   printf("%s\n",nib);
+   printf("%s\n",nim);
+
+}
+
+//Where you replace get_string("name:"), with a 
+//hardcoded value "blink", Although the code runs
+//fine, it produces a "segmentation fault" rather 
+//than the expected output.
