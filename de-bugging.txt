@@ -1,0 +1,29 @@
+Use
+
+For scripts that won't compile, try help50.
+help50 make <filename>
+
+###############################################
+For logical errors in your script use:
+make <filename>
+debug50 ./filename
+In the ide text editor, you can place red dots as marker points to your code. You do this by clicking to the left of the relevant line number when the hand appears. 
+
+Do this before running debug50 <./filename> 
+
+Next, use the "step into" option (located top right of ide) to step through your code one line at a time, wherever you placed a red dot.
+
+This is useful to see how your code is running, one line at a time.
+
+YOU CAN USE THIS EXAMPLE
+
+debugging logical error
+for(int i = 0; i<10; i++)
+    {
+        printf("# is now %i", i);//my diagnostics
+        printf("# \n");
+
+###################################
+
+
+
