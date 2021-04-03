@@ -1,5 +1,11 @@
 Error checker
 
+credit:
+To test if a credit card  number is at least greater than zero, you need to first create a long variable (say 'n') and then put 'n' into another variable (say credit). This allows this outside 'do while n is zero' to test this properly.
+It doesn't work if you initially test 'credit'. I think it's because credit continually changes as it moves through the loop. 
+
+
+
 Often, you forget to place a comma after datatype placeholder and variable name. EG: printf("%li \n" , credit);
 
 float and get_int.
