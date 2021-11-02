@@ -3,20 +3,14 @@
 //Ask for user's credit card number and print out number of digits
 int main(void)
 {
-   long credit;
-   int digits, incr = 0;
-   {
-      credit = get_long("Number: ");//Ask user for number
-      while (credit != 0)//Loop to ittirate through every digit until credit becomes zero (stopping point)
-      {
-         digits = credit % 10;//FET: Isolate last most digit and put into 'digits' variable
-         credit = credit / 10;//Make credit one digit smaller by dividing by 10
-         incr ++;//INCR Increment by one at every revolution of the loop
-      }
-   }
-       printf("%iDigits\n = ", incr);
+   int count = 0;//Set counter to zero
+   long card = get_long("Card Number: ");//Prompt user for credit card number
+    while (card != 0)//Set the loop condition (while card is NOT zero)
+    {
+        count ++;//Increment counter by 1
+        card = card / 10;//Divide card by 10 to get to next left digit, working your way down towards zero.
+    }
+      printf("%i \n", count);//Print the 'count' sum.
+
 }
 
-//FET = Fresh Every Time
-//INCR = Increments or accumulates each time.
-//INCR's are usually initialised by a zero, unlike FET's
