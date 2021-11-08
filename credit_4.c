@@ -1,31 +1,38 @@
-#include <cs50.h>
 #include <stdio.h>
+#include <cs50.h>
+#include <string.h>
+#include <ctype.h>
+#include <math.h>
+#include <stdlib.h>
+//c_practice credit_4
 //Ask for user's credit card number
 //Add up every evenly- positioned digit
-//Multiply every oddly-positioned digit by 2 first, before also adding these up
-//Print out number of digits and the total sum of the digits as per above.
+//Multiply every oddly-positioned digit by 2 first, before also adding these up also
+//Print out number of digits and the total sum of the digits.
 int main(void)
 {
-   long n, credit;
-   int total_sum = 0, digit = 0, position = 0, length = 0, temp = 0;//Lets initialise some useful variables
-   n = get_long("Card Number ") ; //take user's credit card number
-   credit = n;//I am preserving the initial user input inside 'n' just in case I need it later.
-   while(credit != 0)//Loop until credit reaches zero
-   {
-      digit = credit % 10;//select the remainder digit when credit is divided by 10 (last most) and put into digit variable FET
-
-      if(position % 2 != 0)//Seek out the odd positions numbers (remainder NOT zero when divided by 2)
-      {
-         temp =  digit * 2;//multiply every odd digit by two. FET. I'm using the 'temp' variable to keep things neat.
-         total_sum = total_sum + temp;//Add the sum of temp into total_sum.
-      }
-      else
-      {
-         total_sum = total_sum + credit % 10;//Simply add all the evenly-positioned numbers
-      }
-      position++;//Adds one to itself at each ittiration of the loop.
-      credit = credit / 10;//Reduces credit by one digit each time. 
-   }
-   printf("Number of digits = %d\n",position);
-   printf("Total sum = %d\n ",total_sum);
+    long number = get_long("Card Number");
+    long x = number;
+    int count = 0, addup;
+    int digit;
+    while (x != 0)
+    {
+        digit = x % 10;
+        if(count % 2 == 0)
+        {
+            addup = addup + digit;
+        }
+        else
+        {
+            addup = addup + (digit * 2);
+        }
+        count ++;
+        x = x / 10;
+    }
+    printf("Total = %i\nDigit count =  %i ", addup, count);
 }
+
+//Below have already been done:
+//c_practice credits_1
+//c_practice credits_2
+//c_practice credit_3
