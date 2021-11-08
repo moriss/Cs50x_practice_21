@@ -2,6 +2,10 @@ Error checker
 
 Recent on top
 
+During working with longs, you often have a logic error where the code appears correct but has no output (via print f)
+This is usulaly down to 3 things. 1. Not setting your counter to zero, 2. not increminting counter by 1 at end of cycle and 3.not dividing long by 10 to access 
+next digit. 
+
 
 int addup = 0;
 When accumulating numbers you need to initialise the variable with zero or it doesn't work.
@@ -31,7 +35,8 @@ while(cash => fifty) {do this}
 THE SECOND EXAMPLE DOESN'T WORK BECAUSE EQUAL-TO COMES BEFORE GREATER THAN!!!
 
 credit:
-To test if a credit card  number is at least greater than zero, you need to first create a long variable (say 'n') and then put 'n' into another variable (say credit). This allows this outside 'do while n is zero' to test this properly.
+To test if a credit card  number is at least greater than zero, you need to first create a long variable (say 'n') and then put 'n' into another variable
+(say credit). This allows this outside 'do while n is zero' to test this properly.
 It doesn't work if you initially test 'credit'. I think it's because credit continually changes as it moves through the loop. 
 
 
@@ -96,7 +101,8 @@ The first value/string of the array is the name of the file <./hello>.
 
 My speak:'Applying attributes to variables'
 a = (a < 5)
-'You need to 'go round the block' when attributing a new value to a variable.' You can't just all of a sudden say a < 5. You must first take a then a again, then the new value that is applied to it. it takes the form a = ( a    )
+'You need to 'go round the block' when attributing a new value to a variable.' You can't just all of a sudden say a < 5. You must first take a then a again, 
+then the new value that is applied to it. it takes the form a = ( a    )
 
 STOPPED HERE
 
