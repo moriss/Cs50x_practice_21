@@ -11,25 +11,25 @@
 //Print out number of digits and the total sum of the digits.
 int main(void)
 {
-    long number = get_long("Card Number");
-    long x = number;
-    int count = 0, addup;
-    int digit;
-    while (x != 0)
+    long number = get_long("Card Number");//Prompt user for credit card number
+    long x = number;//Put into x so you can preserve number for future tasks.
+    int count = 0, addup;//Set a counter and an adding up variable.
+    int digit;//Initialise a variable to select individual digits within the card
+    while (x != 0)//Loop until x reaches zero
     {
-        digit = x % 10;
-        if(count % 2 == 0)
+        digit = x % 10;//Put x mod 10 into digit.
+        if(count % 2 == 0)//Where an oddly positioned number is selected, do the following.
         {
-            addup = addup + digit;
+            addup = addup + digit;//add digit to addup.
         }
         else
         {
-            addup = addup + (digit * 2);
+            addup = addup + (digit * 2);//multiply evenly positioned numbers by two before adding them to addup.
         }
-        count ++;
-        x = x / 10;
+        count ++;//Increment count by one
+        x = x / 10;//divide x by ten to reach next number in line.
     }
-    printf("Total = %i\nDigit count =  %i ", addup, count);
+    printf("Total = %i\nDigit count =  %i ", addup, count);//Output number of digits and sum they add up to.
 }
 
 //Below have already been done:
