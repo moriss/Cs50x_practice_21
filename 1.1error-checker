@@ -3,7 +3,7 @@ Error checker
 Recent on top
 
 During working with longs, you often have a logic error where the code appears correct but has no output (via print f)
-This is usulaly down to 3 things. 1. Not setting your counter to zero, 2. not increminting counter by 1 at end of cycle and 3.not dividing long by 10 to access 
+This is usulaly down to 3 things. 1. Not setting your counter or addup variable to zero, 2. not increminting counter by 1 at end of cycle and 3.not dividing long by 10 to access 
 next digit. 
 
 
