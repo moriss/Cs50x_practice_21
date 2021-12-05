@@ -14,3 +14,25 @@ int main(void)
 
 }
 
+//Do the same with a separate function
+
+#include <cs50.h>//Credit1 with own program/function
+#include <stdio.h>//Ask for user's credit card number and print out number of digits
+int my(long digits);
+int main (void)
+{
+    long number = get_long("Card Number");
+    my(number);
+}
+    int my(long card_number)
+    {
+    int digit;
+    while(card_number != 0)
+        {
+            digit = card_number % 10;
+            printf("%i ", digit);
+            card_number = card_number / 10;
+        }
+        return 0;
+    }
+
