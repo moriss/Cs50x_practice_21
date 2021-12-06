@@ -22,6 +22,39 @@ int main(void)
     printf("Sum= %i \nTotal Digits= %i \n", addup, count_digits);
 }
 
+//A version using your own function
+#include <cs50.h>//Credit2 with own program/function
+#include <stdio.h>//Ask for user's credit card number then a) add up every digit and  b) print out number of digits.
+void my(long card);
+//Create you own function for below.
+//Ask for user's credit card number then a) add up every digit and  b) print out number of digits.
+//Example: card number 2222. a)=8  b)=4
+
+
+int main (void)
+{
+    long credit_card = get_long("card number ");
+    my(credit_card);
+}
+
+   void my(long card)
+   {
+       int digit, addup = 0, count = 0;
+    while (card!=0)
+    {
+        digit = card % 10;
+        addup = addup + digit;
+        count ++;
+        card = card / 10;
+    }
+    printf("%i \n %i ", addup , count);
+   }
+
+
+
+
+
+
 
 //Below have already been done:
 //c_practice credits_1
