@@ -20,6 +20,33 @@ int main (void)
     }
     
 }
+//##############################################################
+//2. Use your own function with input and output
+char my(char * x);//Prototype goes here
+int main (void)
+{
+    char * n = get_string("Name: ");//Get a string from the user
+    my(n);//Pass 'n' from main into 'my' function
+}
+
+char my(char * x)//'my' function has input 'x' and void output
+{
+        if(x[0] == 'm')//if the first letter is m...
+    {
+        printf("Your name begins with %c" , x[0]);
+        return 0;
+    }
+    else
+    {
+        printf("Your name doesn't begin with 'm'");
+        return 1;
+    }
+}
+
+
+
+
+
 //###############################################################
 //2. Use your own function with void ouput
 void my(char * x);//Prototype goes here
