@@ -1,7 +1,8 @@
-//TASKS ARE AT THE BOTTOM OF THIS FILE
-
-//#############################################################
 //There are three different kinds of loops
+//Create a simple while loop.
+//1. Do same with your own function using both input and output
+//2 This time with void input and output
+//3 Finally with void input and void output
 
 //A) while loop (infinte loop). Use when you want the loop to repeat an unknown number of times. (good for games)
 
@@ -160,3 +161,38 @@ int main (void)
       sleep(1);//Pause for one second. (Looks cool).
    }
 }  
+//##########################################
+//Create a simple while loop with your own function having both input and output
+int my(long into);
+int main (void)
+{
+    long junu = get_long("number");
+    my(junu);
+}
+    int my(long into)
+    {
+        while (into !=0 )
+        {
+            into = into / 10;
+        }
+    printf("%li  ", into);
+    return 0;
+    }
+
+//###############################
+//Create a simple while loop, This time with void input and void output
+void my(long into);
+int main (void)
+{
+    my();
+}
+    void my(long into)
+    {
+        into = get_long("number");
+        while (into !=0 )
+        {
+            into = into / 10;
+        }
+    printf("%li  ", into);
+    }
+
