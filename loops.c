@@ -40,24 +40,33 @@ int main (void)
     while (fullname[0] < 1 );//Keep asking until the first letter is at least a symbol and not empty.
 }
 //#############################################################
-
-//LOOPS WITH INTEGERS
-//2. Now with your own program
-void my(void);//Prototype
-int main (void)
+//Keep asking the user for their name until it begins with the letter 'm'
+//Create a simple while loop, This time with void input and an output
+int my();//Protoptype
+int main (void)//C's main function
 {
-    my();
+    my();//Run your function below without any input
 }
-
-void my(void)//Has no input or output
-{
-    char * x;//Declare 'x' variable to be used below.
-    do
+    int my()//Start of your function
     {
-         x = get_string("Enter your full name: ");
+        char * initial;//Declare a 'string' variable
+        do//do below until the while is no longer satisfied
+        {
+            initial = get_string ("your name please: ");//As user for a name
+        }
+        while (initial[0] != 109);//keep looping while first letter is not 109 ('m')
+        return false;/*Return false is simply returning a value to satisfy an (int)
+        output requirement */
     }
-    while (x[0] < 1 );
-}
+/* Here, integers are being used to identify letters on the assci table. 109 
+represents the letter 'm'. This allows us to test for the letter 'm' at the 
+beginning of a name. The loop keeps asking the user for a name until the name
+begins with the letter 'm'.
+
+
+
+
+
 
 //##########################################################
 
