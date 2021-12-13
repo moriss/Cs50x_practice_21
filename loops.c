@@ -28,13 +28,6 @@ for(int i = 0; i < 10;     i ++)
 	do this
 }
 //################################################################
-#include <cs50.h>
-#include <stdio.h>//
-#include <string.h>
-#include <ctype.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <math.h>
 //LOOPS WITH STRINGS
 //1. Create a do while loop
 int main (void)
