@@ -1,5 +1,7 @@
 Error checker
 
+Within a for loop, you used comas to separate conditions etc, instead of semi colons. THis brought up and error "function redefined!"
+
 Recent on top
 
 During working with longs, you often have a logic error where the code appears correct but has no output (via print f)
