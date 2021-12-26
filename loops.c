@@ -71,7 +71,7 @@ begins with the letter 'm'.
 //##########################################################
 
 //LOOPS WITH INTEGERS
-//1. Create a for loop
+//1. Create a for loop with integers as the data type.
 
 int main (void)
 {
@@ -84,7 +84,7 @@ int main (void)
 }
 //i starts at zero because the first integer of x starts at zero, therefor the last integer is at x - 1.
 //###########################################################
-
+stopped here
 //LOOPS WITH INTEGERS
 //Now with your own program
 void my(int x);
