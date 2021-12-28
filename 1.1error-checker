@@ -1,8 +1,13 @@
 Error checker
 
-Within a for loop, you used comas to separate conditions etc, instead of semi colons. THis brought up and error "function redefined!"
+Here I have noted down some common errors I make in my code. It's useful to read over it every now and then to cut down on the time in identifying and correcting 
+errors as they arise. I try to paste the error message (when i remember to) as a helpful guide (for non logical errors).
 
-Recent on top
+Within a for loop, you mistakenly used comas to separate conditions etc, instead of semi colons. This brought up and error "function redefined!" or 
+"redefinition of 'i'"
+for(int i = 0, i < j, i ++)  should  be  for(int i = 0; i < j; i ++)
+
+STOPPED HERE
 
 During working with longs, you often have a logic error where the code appears correct but has no output (via print f)
 This is usulaly down to 3 things. 1. Not setting your counter or addup variable to zero, 2. not increminting counter by 1 at end of cycle and 3.not dividing long by 10 to access 
