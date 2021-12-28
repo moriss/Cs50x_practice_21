@@ -9,8 +9,11 @@ for(int i = 0, i < j, i ++)  should  be  for(int i = 0; i < j; i ++)
 
 STOPPED HERE
 
-During working with longs, you often have a logic error where the code appears correct but has no output (via print f)
-This is usulaly down to 3 things. 1. Not setting your counter or addup variable to zero, 2. not increminting counter by 1 at end of cycle and 3.not dividing long by 10 to access 
+When working with longs, you often have a logic error where the code appears correcttly but has no output (via print f)
+This is usulaly down to any of these 3 things. 
+1. Not setting your counter or addup variable to zero (if being used)
+2. not increminting counter by 1 at end of cycle
+3.not dividing long by 10 to access 
 next digit. 
 
 
