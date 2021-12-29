@@ -12,34 +12,37 @@ for(int i = 0, i < j, i ++)  should  be  for(int i = 0; i < j; i ++)
 When working with longs in the various credit tasks,I often have a logic error where the code shows no errors but has no output (via print f) or something unusal
 happens.
 This is usually down to any of these 3 things. 
-1. Not setting your counter or addup variable to zero (if being used) (initialize the variable 'foo' to silence this warning)
-2. not increminting counter by 1 at end of cycle (Usually creates a logical error, ie your code runs correctly but doesn't produce a result at printf)
+1. Not setting your counter or addup variable to zero (if being used) (error: initialize the variable counter to silence this warning)
+2. not increminting counter by 1 at end of cycle, eg counter ++. (Usually creates a logical error, ie your code runs correctly but doesn't produce a result at 
+printf)
 3. Not dividing long by 10 to access next digit. (if you end up on an infinte loop, hit ctrl + c to kill the programe.
 
-STOPPED HERE
 
 int addup = 0;
-When accumulating numbers you need to initialise the variable with zero or it doesn't work.
-Just having int addup; will bring strange results.
+When accumulating (adding up) numbers, you need to initialise the variable ,say with zero, or it doesn't work.
+Just having int addup; instead of int addup = 0; will likely bring up a logical error. Ie it will print a wrong answer.
 
 HOWEVER, this doesn't seem to be required when setting a number into a variable such as x = card % 10;. Here, the variable only needs to be declared ie int x.
+This also works if you initialise the variable, as above. So both way work. 
 
-
-When accumulating different conditions of digits and you need an end total, remember it is as below rather than just addup = (card...
+When accumulating different conditions of digits remember it is as below.
 
 addup = addup + (card % 10) * 2;
+and not
+addup = (card % 10) * 2; This will put the lastmost digit on its own into addup. 
 
-In other words, when outputing an answer at the very end, addup must be continualy acruing the digits while calculating through say a loop. 
 
-
-Where you write a function and call main, do not add the int or char or char * datatype to the function call in main or it messes things up.
+Where you write a function and call main, do not add the datatype to the function call in main or it messes things up.
+error: a parameter list without types is only allowed in a function definition
 
 eg  
 void myf(char * x)
 Above is the prototype in the header. 
 But in main you just put
 	myf(x)
-@@@@@@@@@@@@@@@@@@@@
+
+STOPPED HERE
+
 cash:
 while(cash >= fifty) {do this}
 while(cash => fifty) {do this}
