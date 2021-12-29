@@ -7,15 +7,16 @@ Within a for loop, you mistakenly used comas to separate conditions etc, instead
 "redefinition of 'i'"
 for(int i = 0, i < j, i ++)  should  be  for(int i = 0; i < j; i ++)
 
+
+
+When working with longs in the various credit tasks,I often have a logic error where the code shows no errors but has no output (via print f) or something unusal
+happens.
+This is usually down to any of these 3 things. 
+1. Not setting your counter or addup variable to zero (if being used) (initialize the variable 'foo' to silence this warning)
+2. not increminting counter by 1 at end of cycle (Usually creates a logical error, ie your code runs correctly but doesn't produce a result at printf)
+3. Not dividing long by 10 to access next digit. (if you end up on an infinte loop, hit ctrl + c to kill the programe.
+
 STOPPED HERE
-
-When working with longs, you often have a logic error where the code appears correcttly but has no output (via print f)
-This is usulaly down to any of these 3 things. 
-1. Not setting your counter or addup variable to zero (if being used)
-2. not increminting counter by 1 at end of cycle
-3.not dividing long by 10 to access 
-next digit. 
-
 
 int addup = 0;
 When accumulating numbers you need to initialise the variable with zero or it doesn't work.
