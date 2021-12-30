@@ -41,12 +41,21 @@ Above is the prototype in the header.
 But in main you just put
 	myf(x)
 
-STOPPED HERE
 
 cash:
-while(cash >= fifty) {do this}
-while(cash => fifty) {do this}
-THE SECOND EXAMPLE DOESN'T WORK BECAUSE EQUAL-TO COMES BEFORE GREATER THAN!!!
+while(cash >= fifty) {do this} THis works
+while(cash => fifty) {do this} error: expected expression
+THE SECOND EXAMPLE DOESN'T WORK BECAUSE 'EQUAL TO' COMES BEFORE GREATER THAN!!!
+
+Logical error with cash:
+Asking user for change required = 1.2 dollars.
+The variable begins its journey as a float. float change = get_float("Change Required);
+Now to get to the pennies so you can work with user's input, you need to divide by 100. 1.2 dollars eqauls 120 cents.
+When dividing by 100 you use another variable with data type int to correctly store user's input . eg: int answer = change * 100;
+The error occurs when you don't put the users input into a separate variable with datatypy int. 
+The program will simply keep asking you for input rather than give you the answer you require.
+
+STOPPED HERE
 
 credit:
 To test if a credit card  number is at least greater than zero, you need to first create a long variable (say 'n') and then put 'n' into another variable
