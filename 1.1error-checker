@@ -56,6 +56,7 @@ The error occurs when you don't put the users input into a separate variable wit
 The program will simply keep asking you for input rather than give you the answer you require.
 
 STOPPED HERE
+CHECK CREDIT VIDEO YOU FOLLOWED TO BETTER UNDERSTAND THIS POTENTIAL PROBLEM BELOW
 
 credit:
 To test if a credit card  number is at least greater than zero, you need to first create a long variable (say 'n') and then put 'n' into another variable
