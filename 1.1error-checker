@@ -55,18 +55,13 @@ When dividing by 100 you use another variable with data type int to correctly st
 The error occurs when you don't put the users input into a separate variable with datatypy int. 
 The program will simply keep asking you for input rather than give you the answer you require.
 
-STOPPED HERE
-CHECK CREDIT VIDEO YOU FOLLOWED TO BETTER UNDERSTAND THIS POTENTIAL PROBLEM BELOW
-
-credit:
-To test if a credit card  number is at least greater than zero, you need to first create a long variable (say 'n') and then put 'n' into another variable
-(say credit). This allows this outside 'do while n is zero' to test this properly.
-It doesn't work if you initially test 'credit'. I think it's because credit continually changes as it moves through the loop. 
+Credit Problem:
+To check starting numbers of digits, you need to make a copy of the original credit card number for this purpose. (original number preserved).
 
 
-
+General
 Often, you forget to place a comma after datatype placeholder and variable name. EG: printf("%li \n" , credit);
-
+You do this instead printf("%li \n"  credit);
 
 
 float and get_int.
@@ -75,7 +70,7 @@ very common to set a datatype as a float and when you want input from the user, 
 
 
 PRINTING LONG NUMBERS
-You don't need an array or loop to print out a credit card number 
+You don't need an array orloop to print out a credit card number 
 
 eg:
 int main (void)
@@ -88,7 +83,7 @@ int main (void)
 //Working your way through the numbers can be done with modulo and division.
 
 
-
+STOPPED HERE
 //##########################################################
 When using constants, they can't be added to abbreviated arrays such as below.(error! variable-sized object may not be initialized).
 HOWEVER, N in assigns can be replaced with number of variables (in the case below, '3', or it can be left blank altogether.
