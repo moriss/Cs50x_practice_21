@@ -88,16 +88,19 @@ credit = credit / 10;  //divide credit by 10 to get to the next digit you want t
 
 STOPPED HERE
 //##########################################################
-When using constants, they can't be added to abbreviated arrays such as below.(error! variable-sized object may not be initialized).
-HOWEVER, N in assigns can be replaced with number of variables (in the case below, '3', or it can be left blank altogether.
+When using constants, they can't be added to abbreviated arrays such as first example below.(error! variable-sized object may not be initialized).
+HOWEVER, in the first example, N in int assigns[N]  can be replaced with number of variables (3), or it can be left blank altogether.
+
+Example 1
 const int N = 3;
 int main (void)
 {
-      int assigns[N] {43, 34, 43};
+      int assigns[N] = {43, 34, 43};//So this needs to be int assigns[3] or int assign[] in order for it to work
       
       printf("%i \n",  (assigns[0] + assigns[1] + assigns[2]) / N);
 }
 
+Example 2
 IT DOES, HOWEVER WORK IN THE EXAMPLE BELOW WHERE ARRAYS ARE LAYED OUT AND ITEMISED THUS.
 const int N = 3;
 int main (void)
