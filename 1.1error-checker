@@ -80,7 +80,10 @@ int main (void)
         printf("%li" , credit);
 }
 //This simply prints out the number you have inputed
-//Working your way through the numbers can be done with modulo and division.
+//Working your way through the digits can be done with modulo and division.
+int digit = credit % 10;  //Capture the lastmost digit from the long number (modulo)
+credit = credit / 10;  //divide credit by 10 to get to the next digit you want to access (division)
+
 
 
 STOPPED HERE
