@@ -122,30 +122,23 @@ int main(int argc, string argv[]
 The first value/string of the array is the name of the file <./hello>.
 Common error is to ommit either 'string' or '[]' at end of argv. Both argc and argv are named by convention.
 
-STOPPED HERE
-My speak:'Applying attributes to variables'
-a = (a < 5)
-'You need to 'go round the block' when attributing a new value to a variable.' You can't just all of a sudden say a < 5. You must first take a then a again, 
-then the new value that is applied to it. it takes the form a = ( a    )
 
 STOPPED HERE
 
 *SEGMENTATION FAULTS*
-
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 3) Segmentation fault with hard coded variables.
 
 IN this example, seg fault is returned because you hardcoded *one.
 This seg fault is elimenated when you change 
 char *one = "ivy" to 
-char *one = get_string("String: ); (I don't know why)
-
+char *one = get_string("String: "); (I don't know why)
  {
    char *one = "Ivy";
-   char *two = one;
+   char *two = "one";
    one[0] = toupper(one[0]);
    printf("%s\n",one);
    printf("%s\n",two);
-
 }
 
 2) Can happen if you ommit [i] within a for loop condition.
@@ -172,6 +165,9 @@ Example below :
 The 'return 1;' at 'else', stops the program running since a certain condition is 
 not met.
 If you ommit 'return 1; here, you get a warning 'segmentation fault'.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
 
 ###############################################
 int main(int argc, string argv[])
