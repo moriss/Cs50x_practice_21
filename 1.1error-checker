@@ -127,14 +127,14 @@ STOPPED HERE
 
 *SEGMENTATION FAULTS*
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-3) Segmentation fault with hard coded variables.
+1) Segmentation fault with hard coded variables.
 
-IN this example, seg fault is returned because you hardcoded *one.
+IN this example, seg fault is returned because you hardcoded *one. It's appears to be as simple as that. 
 This seg fault is elimenated when you change 
 char *one = "ivy" to 
-char *one = get_string("String: "); (I don't know why)
+char *one = get_string("String: "); (I don't know why but it solves the problem.)
  {
-   char *one = "Ivy";
+   char *one = "Ivy";//Changing this to get_string("name;" ); solves the seg fault issue. 
    char *two = "one";
    one[0] = toupper(one[0]);
    printf("%s\n",one);
@@ -159,7 +159,7 @@ bool check_digit(string a)
 
 
 
-1) Can happen when you haven't added a return value.
+3) Can happen when you haven't added a return value.
 
 Example below :
 The 'return 1;' at 'else', stops the program running since a certain condition is 
