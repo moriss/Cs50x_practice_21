@@ -86,7 +86,7 @@ credit = credit / 10;  //divide credit by 10 to get to the next digit you want t
 
 
 
-STOPPED HERE
+
 //##########################################################
 When using constants, they can't be added to abbreviated arrays such as first example below.(error! variable-sized object may not be initialized).
 HOWEVER, in the first example, N in int assigns[N]  can be replaced with number of variables (3), or it can be left blank altogether.
@@ -113,17 +113,16 @@ int main (void)
       printf("%i \n",  (assigns[0] + assigns[1] + assigns[2]) / N);
 }
 
-
 #################################################################
 
-
-user input from the command line.
+User input from the command line.
 int main(int argc, string argv[]
 'int argc counts the number of strings (arrays of strings).
-'int argv stores the string values in an array (square brackets required to ensure it string argv is indeed an array.
+'int argv stores the string values in an array (square brackets required to ensure string argv is indeed an array.
 The first value/string of the array is the name of the file <./hello>.
+Common error is to ommit either 'string' or '[]' at end of argv. Both argc and argv are named by convention.
 
-
+STOPPED HERE
 My speak:'Applying attributes to variables'
 a = (a < 5)
 'You need to 'go round the block' when attributing a new value to a variable.' You can't just all of a sudden say a < 5. You must first take a then a again, 
