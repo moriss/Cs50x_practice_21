@@ -123,25 +123,26 @@ The first value/string of the array is the name of the file <./hello>.
 Common error is to ommit either 'string' or '[]' at end of argv. Both argc and argv are named by convention.
 
 
-STOPPED HERE
+
 
 *SEGMENTATION FAULTS*
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 1) Segmentation fault with hard coded variables.
 
-IN this example, seg fault is returned because you hardcoded *one. It's appears to be as simple as that. 
+In this example, seg fault is returned because you hardcoded *one. It's appears to be as simple as that. 
 This seg fault is elimenated when you change 
 char *one = "ivy" to 
 char *one = get_string("String: "); (I don't know why but it solves the problem.)
  {
-   char *one = "Ivy";//Changing this to get_string("name;" ); solves the seg fault issue. 
+   char *one = "Ivy";//Here, changing this to get_string("name;" ); solves the seg fault issue. 
    char *two = "one";
    one[0] = toupper(one[0]);
    printf("%s\n",one);
    printf("%s\n",two);
 }
-
+STOPPED HERE
 2) Can happen if you ommit [i] within a for loop condition.
+isdigit = a digit between zero  and 9 (betwenn 48 and 57 inclusive on the ascii table)
 Example below:
 ***if(!isdigit(a[i]))***It needs the [i] which can be ofter missed
 bool check_digit(string a)
@@ -155,8 +156,6 @@ bool check_digit(string a)
     }
     return true;
 }
-
-
 
 
 3) Can happen when you haven't added a return value.
