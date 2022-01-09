@@ -1,0 +1,37 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <math.h>
+
+int main (void)
+{
+
+   int count = 0; char option1 = 'a', option2 = 'b', option3 = 'c';
+   
+   char answer_1 = get_char("Select a, b or c : ");
+   
+   if (answer_1 == 'b' || answer_1 == 'c')
+   {
+      printf("Incorrect Answer");
+   }
+   else 
+   {
+      printf("Correct!");
+      count ++;
+   }
+   char answer_2 = get_char("Select a, b or c : ");
+   
+   if (answer_2 == 'b' || answer_1 == 'c')
+   {
+      printf("Incorrect Answer\n");
+   }
+   else 
+   {
+      printf("Correct!");
+      count ++;
+   }
+   printf("You have scored a total of %i out of 2\n ", count);
+}
