@@ -141,15 +141,16 @@ char *one = get_string("String: "); (I don't know why but it solves the problem.
    printf("%s\n",two);
 }
 STOPPED HERE
+ONCE YOU UNDERSTAND RETURN VALUES FOR C AS A DIGIT, HAVE A LOOK AT BOOL
 2) Can happen if you ommit [i] within a for loop condition.
 isdigit = a digit between zero  and 9 (betwenn 48 and 57 inclusive on the ascii table)
 Example below:
-***if(!isdigit(a[i]))***It needs the [i] which can be ofter missed
+***if(isdigit(a[i]))***It needs the [i] which can be often missed
 bool check_digit(string a)
 {
     for (int i = 0; i < strlen(a); i ++)
     {
-        if(!isdigit(a[i]))
+        if(isdigit(a[i]))
         {
             return false;
         }
