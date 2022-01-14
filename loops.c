@@ -1,6 +1,6 @@
 //There are three different kinds of loops
 //Create a simple while loop.
-//1. Do same with your own function using both input and output
+//1. Do same with your own function with both inputs and outputs
 //2 This time with void input and output
 //3 Finally with void input and void output
 
