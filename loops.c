@@ -22,9 +22,7 @@ int main(void)
       number ++;
    }
 }
-
 //###################################
-
 //2) do while loop. Use when you want it to run at least once. EG prompt the user for input.
 do
 {
@@ -32,7 +30,7 @@ do
 }
 while (This is true)
 //This will run at least once, then will check if true.
-//Example below with own function, this time containg void input and output.
+//Example below with own function, this time containg void input and output (Just for practice).
 int main(void)
 {
    my();
@@ -48,7 +46,6 @@ int main(void)
    printf("At last!, Your name begins with %c \n" , name[0]);
    }
 ######################
-//STOPPED HERE
 //C) A for loop. Used for repeating a discreet number of times. EG: You could ask the user for a number that will loop for that number of times
 
      start    expression  increment
@@ -56,7 +53,17 @@ for(int i = 0; i < 10;     i ++)
 {
 	do this
 }
+//Example:
+int main(void)
+{
+   int num = get_int("Enter Number :");//promt user for a number
+   for(int i = 0; i <= num; i ++)//Set i to zero, make it smaller or equal to num, increment by 1 as it loops
+   {
+      printf("Hello %i of %i \n", i,num);//Print out the result at each loop cycle.
+   }
+}
 //################################################################
+//STOPPED HERE
 //LOOPS WITH STRINGS
 //1. Create a do while loop
 int main (void)
