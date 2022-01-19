@@ -1,25 +1,54 @@
 //There are three different kinds of loops
-//Create a simple while loop.
-//1. Do same with your own function with both inputs and outputs
-//2 This time with void input and output
-//3 Finally with void input and void output
 
-//A) while loop (infinte loop). Use when you want the loop to repeat an unknown number of times. (good for games)
+//1) while loop (infinte loop). Use when you want the loop to repeat an undefined number of times. (good for games)
 
 while (true)
 {
 	excecute this
 }
-//if you get into an infinite loop, hit control.c to kill it
+//NB if you get into an infinite loop, hit control.c to kill it
+//Now //Create a simple while loop.
+//1. Do same with your own function with both inputs and outputs
+//2 This time with void input and output
+//3 Finally with void input and void output
+
+//Below is an example.
+int main(void)
+{
+   int number = get_int("Your Chosen Number:  ");
+   while (number != 8)
+   {
+      printf("Your number isn't 8, it is %i \n", number );
+      number ++;
+   }
+}
+
 //###################################
-//B) do while loop. Use when you want it to run at least once. EG prompt the user for input
+
+//2) do while loop. Use when you want it to run at least once. EG prompt the user for input.
 do
 {
 	This
 }
 while (This is true)
-//This will run at least once, then will check if true
-
+//This will run at least once, then will check if true.
+//Example below with own function, this time containg void input and output.
+int main(void)
+{
+   my();
+}
+   void my(void)
+   {
+      char * name;
+      do
+      {
+         name = get_string("Please enter your name, although it must begin with 'm' : ");
+      }
+   while (name[0] != 'm');
+   printf("At last!, Your name begins with %c \n" , name[0]);
+   }
+######################
+//STOPPED HERE
 //C) A for loop. Used for repeating a discreet number of times. EG: You could ask the user for a number that will loop for that number of times
 
      start    expression  increment
