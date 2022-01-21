@@ -3,6 +3,16 @@ Error checker
 Here I have noted down some common errors I make in my code. It's useful to read over it every now and then to cut down on the time in identifying and correcting 
 errors as they arise. I try to paste the error message (when i remember to) as a helpful guide (for non logical errors).
 
+
+Logical Error.
+Here, my code is compiling but there is a logical error. 
+When using the while loop on its own, be sure to add curly breaces to the action you want to happen if the while condition is met.
+EG:
+while(this)
+{
+	do this
+}
+#####
 Within a for loop, you mistakenly used comas to separate conditions etc, instead of semi colons. This brought up and error "function redefined!" or 
 "redefinition of 'i'"
 for(int i = 0, i < j, i ++)  should  be  for(int i = 0; i < j; i ++)
