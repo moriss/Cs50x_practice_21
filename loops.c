@@ -15,14 +15,18 @@ while (true)
 //Below is an example.
 int main(void)
 {
-   int number = get_int("Your Chosen Number:  ");
-   while (number != 8)
+   int number = get_int("Your Chosen Number:  ");//Prompt user for a number
+   while (number != 8)//Set the condition to perform the action below while number is NOT 8
    {
-      printf("Your number isn't 8, it is %i \n", number );
-      number ++;
+      printf("Your number isn't 8, it is %i \n", number );//Keep printing this out until your number becomes 8
+      number ++;//Incermenting your number will eventually bring it up to 8
    }
 }
+//Warning! there are safer ways to write this code. If you print a number over 8 then the program will keep printing endlessly as your number 
+//moves further away from 8. Remember to ctrl > c  to kill your program if it runs out of control. 
+//Try and think of a better way to write this program.
 //###################################
+//##################################
 //2) do while loop. Use when you want it to run at least once. EG prompt the user for input.
 do
 {
