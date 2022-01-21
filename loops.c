@@ -26,6 +26,15 @@ int main(void)
 //moves further away from 8. Remember to ctrl > c  to kill your program if it runs out of control. 
 //Try and think of a better way to write this program.
 //###################################
+
+
+
+
+
+
+
+
+
 //##################################
 //2) do while loop. Use when you want it to run at least once. EG prompt the user for input.
 do
@@ -37,19 +46,27 @@ while (This is true)
 //Example below with own function, this time containg void input and output (Just for practice).
 int main(void)
 {
-   my();
+   my();//Run the program
 }
-   void my(void)
+   void my(void)//No inputs or outputs in my function
    {
-      char * name;
+      char * name;//Create a string variable
       do
       {
-         name = get_string("Please enter your name, although it must begin with 'm' : ");
+         name = get_string("Please enter your name, although it must begin with 'm' : ");//Prompt user for a name (string)
       }
-   while (name[0] != 'm');
-   printf("At last!, Your name begins with %c \n" , name[0]);
+   while (name[0] != 'm');//While the first letter of the string isn't 'm', keep prompting user again and again until...
+   printf("At last!, Your name begins with %c \n" , name[0]);//Print this to screen. The sentence and the first letter of string ('m' of course!)
    }
 ######################
+
+
+
+
+
+
+
+
 //C) A for loop. Used for repeating a discreet number of times. EG: You could ask the user for a number that will loop for that number of times
 
      start    expression  increment
@@ -61,12 +78,18 @@ for(int i = 0; i < 10;     i ++)
 int main(void)
 {
    int num = get_int("Enter Number :");//promt user for a number
-   for(int i = 0; i <= num; i ++)//Set i to zero, make it smaller or equal to num, increment by 1 as it loops
+   for(int i = 0; i <= num; i ++)//Set i to zero, make it smaller or equal to num, increment by 1 each time it loops
    {
       printf("Hello %i of %i \n", i,num);//Print out the result at each loop cycle.
    }
 }
 //################################################################
+
+
+
+
+
+
 //STOPPED HERE
 //LOOPS WITH STRINGS
 //1. Create a do while loop
@@ -237,4 +260,5 @@ int main (void)
         }
     printf("%li  ", into);
     }
+
 
