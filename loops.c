@@ -1,6 +1,7 @@
 //There are three different kinds of loops
 
-//1) while loop (infinte loop). Use when you want the loop to repeat an undefined number of times. (good for games)
+// 1) while loop (infinte loop). 
+//Use when you want the loop to repeat an undefined number of times. (good for games)
 
 while (true)
 {
@@ -36,14 +37,16 @@ int main(void)
 
 
 //##################################
-//2) do while loop. Use when you want it to run at least once. EG prompt the user for input.
+// 2) do while loop. 
+//Use when you want it to run at least once. EG prompt the user for input.
 do
 {
 	This
 }
 while (This is true)
 //This will run at least once, then will check if true.
-//Example below with own function, this time containg void input and output (Just for practice).
+	
+//Example below with your own function, this time containg void input and void output (Just for practice).
 int main(void)
 {
    my();//Run the program
@@ -58,57 +61,12 @@ int main(void)
    while (name[0] != 'm');//While the first letter of the string isn't 'm', keep prompting user again and again until...
    printf("At last!, Your name begins with %c \n" , name[0]);//Print this to screen. The sentence and the first letter of string ('m' of course!)
    }
-######################
-
-
-
-
-
-
-
-
-//C) A for loop. Used for repeating a discreet number of times. EG: You could ask the user for a number that will loop for that number of times
-
-     start    expression  increment
-for(int i = 0; i < 10;     i ++)
-{
-	do this
-}
-//Example:
-int main(void)
-{
-   int num = get_int("Enter Number :");//promt user for a number
-   for(int i = 0; i <= num; i ++)//Set i to zero, make it smaller or equal to num, increment by 1 each time it loops
-   {
-      printf("Hello %i of %i \n", i,num);//Print out the result at each loop cycle.
-   }
-}
-//################################################################
-
-
-
-
-
-
-//STOPPED HERE
-//LOOPS WITH STRINGS
-//1. Create a do while loop
-int main (void)
-{
-    char * fullname;//Declare the variable outside the 'do while'
-    do
-    {
-        fullname = get_string("Enter your full name: ");
-    }
-    while (fullname[0] < 1 );//Keep asking until the first letter is at least a symbol and not empty.
-}
-//#############################################################
-//Keep asking the user for their name until it begins with the letter 'm'
-//Create a simple while loop, This time with void input and an output
+//Another way of doing it below.
+// 2 This time with void input and an output
 int my();//Protoptype
 int main (void)//C's main function
 {
-    my();//Run your function below without any input
+    my();//Run your function below without void input (just for practice)
 }
     int my()//Start of your function
     {
@@ -125,29 +83,75 @@ int main (void)//C's main function
 represents the letter 'm'. This allows us to test for the letter 'm' at the 
 beginning of a name. The loop keeps asking the user for a name until the name
 begins with the letter 'm'.
-
-
-
-
-
-
 //##########################################################
 
-//LOOPS WITH INTEGERS
-//1. Create a for loop with integers as the data type.
 
-int main (void)
+
+
+
+
+
+
+
+// 3) A for loop. 
+//Used for repeating a discreet number of times. EG: You could ask the user for a number that will loop for that number of times
+
+     start    expression  increment
+for(int i = 0; i < 10;     i ++)
 {
-   int x = get_int("enter a number: ");
-   
-   for (int i = 0; i < x; i ++)//Set 'i' to zero, stop the loop before value of x and incrimment by 1
+	do this
+}
+//Example below.
+int main(void)
+{
+   int num = get_int("Enter Number :");//prompt user for a number
+   for(int i = 0; i <= num; i ++)//Set i to zero, make it smaller or equal to num, increment by 1 each time it loops
    {
-           printf("#");
+      printf("Hello %i of %i \n", i,num);//Print out the result at each loop cycle.
    }
 }
-//i starts at zero because the first integer of x starts at zero, therefor the last integer is at x - 1.
+//################################################################
+
+
+
+
+
+
+
+// 3 for loops
+//Create a for loop with integers as the data type.
+//Test user's input has not included a space
+Here we go!
+void my (char * x );//Funcion prototype
+int main(void)
+{
+   char * name = get_string("Enter your first name without any spaces; ");//Prompt string from user
+   my(name);//pass user's string into the function
+}
+   void my (char * x )//my function
+   {
+      for(int i = 0; i < strlen(x); i ++ )//Set up a for loop to test each character
+      {
+         if(x[i] == 32)//Test if any character is number 32 (ascii digital representation of a space)
+         {
+            printf("Please do not enter a space in your string here: at position %i  \n", i + 1);//Print to screen if space used including position number
+         }
+      else
+         {
+            printf("Thank you, This character is valid =  %c  \n ", x[i] );//Print to screen if space not used
+         }//Note that you are including the positon number of each space character using i + 1 (Starting 1 instead of zero)
+      }
+   }
 //###########################################################
-stopped here
+
+
+
+
+//STOPPED HERE
+
+
+
+
 //LOOPS WITH INTEGERS
 //Now with your own program
 void my(int x);
