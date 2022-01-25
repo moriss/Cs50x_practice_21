@@ -152,31 +152,13 @@ int main(void)
 
 
 
-//LOOPS WITH INTEGERS
-//Now with your own program
-void my(int x);
-int main (void)
-{
-   int number = get_int("enter a number: ");
-   my(number);//'my' function takes 'number' as input
-}
-
-   void my(int x)//This takes input but no output
-   {
-       for (int i = 0; i < x; i ++)
-        {
-           printf("# ");
-        }
-   }
-//############################################################## 
-
 
 //##############################################################
 //1. Ittirate through LETTERS printing them one at a time. Use the strlen function.
 
 int main (void)
 {
-   char * name = get_string ("Enter a string: ");
+   char * name = get_string ("Enter a string: ");//Prompt user for a string (their name)
    int n = strlen(name);//Declare a string length variable
    for(int i = 0; i < n; i ++)//Stop when i is less than 'n'.
    {
