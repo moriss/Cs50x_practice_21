@@ -160,28 +160,32 @@ int main (void)
 {
    char * name = get_string ("Enter a string: ");//Prompt user for a string (their name)
    int n = strlen(name);//Declare a string length variable
-   for(int i = 0; i < n; i ++)//Stop when i is less than 'n'.
+   for(int i = 0; i < n; i ++)//Set i to zero, have it less than name's length, increment 1 every loop.
    {
-      printf("%c ", name[i]);//Print out the i'ths of name.
+      printf("%c ", name[i]);//Print out the i'ths of name, which prints out the individual characters one at a time.
    }
 }
 //###############################################################
 //2. Do the same but with your own function
-void my(char * x);
-int main (void)
+void my(char * name);//Prototype at top of page
+int main(void)
 {
-   char * name = get_string ("Enter a string: ");
-   my(name);//Pass the 'name' variable into the 'my' function.
-}  
-   
-void my(char * x)
-{
-      int n = strlen(x);
-      for(int i = 0; i < n; i ++)
-      {
-         printf("%c ", x[i]);
-      }
+   char * names = get_string("name: ");//Prompt user for a name
+   my(names);//Pass your 'names'  variable into your own function (named 'my')
 }
+   
+   void my(char * name)
+   {
+      printf("hello ");//Print "hello" to the screen in preperation to greet person.
+      int n = strlen(name);//Create variable 'n', storing string lenth of 'name' in it.
+      for(int i = 0; i < n; i ++)//Set i to zero, and to be same length as string , and to incriment by 1 for each revolution.
+      {
+      printf("%c ", name[i]);//print out individual characters as you loop through each one.
+      }
+   }
+   
+   
+
 //##########################################################
 //2. This time without the strlen function
 void my(char * x);
