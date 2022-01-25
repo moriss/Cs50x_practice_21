@@ -147,14 +147,9 @@ int main(void)
 
 
 
-//STOPPED HERE
-
-
-
-
 
 //##############################################################
-//1. Ittirate through LETTERS printing them one at a time. Use the strlen function.
+//3. Ittirate through LETTERS printing them one at a time. Use the strlen function.
 
 int main (void)
 {
@@ -166,7 +161,7 @@ int main (void)
    }
 }
 //###############################################################
-//2. Do the same but with your own function
+//3. Do the same but with your own function
 void my(char * name);//Prototype at top of page
 int main(void)
 {
