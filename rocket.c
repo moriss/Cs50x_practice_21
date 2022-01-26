@@ -1,0 +1,25 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <math.h>
+void my(int rocket);
+//clock, now with your own program
+int main(void)
+{
+   int number = get_int("Number for counting down: ");
+   my(number);
+   
+}
+
+void my(int rocket)
+{
+   while(rocket > 0)
+   {
+      rocket = rocket - 1;
+      printf("%i ", rocket );
+      sleep(1);
+   }
+}
