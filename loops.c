@@ -31,12 +31,75 @@ int main(void)
 
 
 
+// 1. while loop
+//Create a simple while loop
+int main (void)
+{
+   int i = 0;
+   while(i < 10)//Do something while 'i' is less that 10.
+   {
+      printf("%i " , i);//Print this if true
+      i ++;//Incrememt i by one
+      sleep(1);//Pause for one second. (Looks cool).
+   }
+}  
+//##########################################
 
 
 
 
 
+
+
+
+
+
+check back
+//Create a simple while loop with your own function having both input and output
+int my(long into);
+int main (void)
+{
+    long junu = get_long("number");
+    my(junu);
+}
+    int my(long into)
+    {
+        while (into !=0 )
+        {
+            into = into / 10;
+        }
+    printf("%li  ", into);
+    return 0;
+    }
+
+//###############################
+//Create a simple while loop, This time with void input and void output
+void my(long into);
+int main (void)
+{
+    my();
+}
+    void my(long into)
+    {
+        into = get_long("number");
+        while (into !=0 )
+        {
+            into = into / 10;
+        }
+    printf("%li  ", into);
+    }
 //##################################
+
+
+
+
+
+
+
+
+
+
+
 // 2) do while loop. 
 //Use when you want it to run at least once. EG prompt the user for input.
 do
@@ -107,7 +170,7 @@ int main(void)
    int num = get_int("Enter Number :");//prompt user for a number
    for(int i = 0; i <= num; i ++)//Set i to zero, make it smaller or equal to num, increment by 1 each time it loops
    {
-      printf("Hello %i of %i \n", i,num);//Print out the result at each loop cycle.
+      printf("Hello %i of %i \n", i,num);//Print out the result at each loop cycle and number its position.
    }
 }
 //################################################################
@@ -119,14 +182,14 @@ int main(void)
 
 
 // 3 for loops
-//Create a for loop with integers as the data type.
-//Test user's input has not included a space
+//Create a for loop with integers as the data type, using your own function.
+//Test whether the user's input has or hasn't included a space
 Here we go!
 void my (char * x );//Funcion prototype
 int main(void)
 {
    char * name = get_string("Enter your first name without any spaces; ");//Prompt string from user
-   my(name);//pass user's string into the function
+   my(name);//pass user's string into the function (below)
 }
    void my (char * x )//my function
    {
@@ -148,7 +211,9 @@ int main(void)
 
 
 
-//##############################################################
+
+
+
 //3. Ittirate through LETTERS printing them one at a time. Use the strlen function.
 
 int main (void)
@@ -161,6 +226,15 @@ int main (void)
    }
 }
 //###############################################################
+
+
+
+
+
+
+
+
+
 //3. Do the same but with your own function
 void my(char * name);//Prototype at top of page
 int main(void)
@@ -179,10 +253,18 @@ int main(void)
       }
    }
    
-   
-
 //##########################################################
-//2. This time without the strlen function
+
+
+
+
+
+
+
+
+
+
+//3. This time without the strlen function
 void my(char * x);
 int main (void)
 {
@@ -200,50 +282,3 @@ void my(char * x)
 }
 
 //########################################################
-//Create a simple while loop
-int main (void)
-{
-   int i = 0;
-   while(i < 10)//Do something while 'i' is less that 10.
-   {
-      printf("%i " , i);//Print this if true
-      i ++;//Incrememt i by one
-      sleep(1);//Pause for one second. (Looks cool).
-   }
-}  
-//##########################################
-//Create a simple while loop with your own function having both input and output
-int my(long into);
-int main (void)
-{
-    long junu = get_long("number");
-    my(junu);
-}
-    int my(long into)
-    {
-        while (into !=0 )
-        {
-            into = into / 10;
-        }
-    printf("%li  ", into);
-    return 0;
-    }
-
-//###############################
-//Create a simple while loop, This time with void input and void output
-void my(long into);
-int main (void)
-{
-    my();
-}
-    void my(long into)
-    {
-        into = get_long("number");
-        while (into !=0 )
-        {
-            into = into / 10;
-        }
-    printf("%li  ", into);
-    }
-
-
