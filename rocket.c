@@ -23,3 +23,34 @@ void my(int rocket)
       sleep(1);
    }
 }
+######################################
+
+
+
+
+//Or Pass a number straight from main into your function
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <math.h>
+void my(int rocket);
+//clock, now with your own program
+int main(void)
+{
+   
+   my(10);
+   
+}
+
+void my(int rocket)
+{
+   while(rocket > 0)
+   {
+      rocket = rocket - 1;
+      printf("%i ", rocket );
+      sleep(1);
+   }
+}
