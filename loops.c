@@ -145,7 +145,7 @@ int main (void)//C's main function
 /* Here, integers are being used to identify letters on the assci table. 109 
 represents the letter 'm'. This allows us to test for the letter 'm' at the 
 beginning of a name. The loop keeps asking the user for a name until the name
-begins with the letter 'm'.
+begins with the letter 'm'.*/
 //##########################################################
 
 
