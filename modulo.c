@@ -37,7 +37,7 @@ int main (void)
 
 int my(int x)
 {
-  if( x % 2 == 0 )//If price  modulo 2 is zero
+  if( x % 2 == 0 )//If remainder is zero when dividing by two..
   {
     printf("%i  is an even number " , x);
     return 0;//Program ends here with even number selected
