@@ -6,7 +6,7 @@
 #include <unistd.h>
 #include <math.h>
 //Multiply two number using the 'double' data type
-int main (void)
+main (void)
 {
    double one = 4476.9;
    double two = 7687.8;
@@ -27,7 +27,7 @@ int main (void)
 
 // double, a floating-point value roughly double in size of a float.
 
-// int, integers up to a certain size, or number of bits.
+// int, integers take up 4 bites
 
 // long, integers with more bits, so they can count higher.
 
