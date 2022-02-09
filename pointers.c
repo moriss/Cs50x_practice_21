@@ -1,11 +1,5 @@
 
-#include <cs50.h>
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <math.h>
+
 //1. print out the address of a value
 //2. Return to printing out the value at a memory location using the * function
 //3. create a pointer variable and print out the pointer variable's value (an address)
