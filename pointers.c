@@ -14,7 +14,7 @@ int main(void)
     printf("%p \n", &g);//1. Address of a value
     printf("%i \n" , *&g);//2. The value at a memory location being pointed to
     printf("%p \n", p);// 3.
-    printf("%i \n" , *p);//4.
+    printf("%i \n" , *p);//4. 
     printf("%p \n", &p);//5. Address the p pointer variable is located
 }
 /*
