@@ -12,10 +12,10 @@ int main(void)
     int g = 5;
     int *p = &g;
     printf("%p \n", &g);//1. Address of a value
-    printf("%i \n" , *&g);//2. The value at a memory location being pointed to
+    printf("%i \n" , *&g);//2. De-referencing. The value at a memory location being pointed to
     printf("%p \n", p);// 3.
-    printf("%i \n" , *p);//4. 
-    printf("%p \n", &p);//5. Address the p pointer variable is located
+    printf("%i \n" , *p);//4. De-referencing. Pointing to the 
+    printf("%p \n", &p);//5. The address the p pointer variable is located.
 }
 /*
 int n = 6; n is the lable, 6 is the value, so two items here. key value pairs perhaps
@@ -25,3 +25,5 @@ int n = 6; n is the lable, 6 is the value, so two items here. key value pairs pe
 */
 //so, two items here. Lable and value
 //so currently, the lable is the pointer
+
+
