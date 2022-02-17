@@ -1,21 +1,23 @@
 
 
-//1. print out the address of a value
-//2. Return to printing out the value at a memory location using the * function
-//3. create a pointer variable and print out the pointer variable's value (an address)
-//4. Now print out the value at the location the pointer variable is pointing to
-//5.print out the pointer variable's address location
+//1. declare and print an int variable
+//2. print the address of the variable
+//3. De-reference the variable and print out the result
+//4. declare and print a pointer variable
+//5. de-reference the pointer variable
 
 //print out the value at the address the pointer variable is pointing to
 int main(void)
 {
-    int g = 5;
-    int *p = &g;
-    printf("%p \n", &g);//1. Address of a value
-    printf("%i \n" , *&g);//2. De-referencing. The value at a memory location being pointed to
-    printf("%p \n", p);// 3.
-    printf("%i \n" , *p);//4. De-referencing. Pointing to the 
-    printf("%p \n", &p);//5. The address the p pointer variable is located.
+    int a = 5;//variable
+    int *b = &a;//poniter variable
+    
+    printf("%i \n", a);//read a
+    printf("%p \n", &a);//read address of a
+    printf("%i \n", *&a);//de-reference a
+    
+    printf("%p \n", b);//read pointer variable 'b'
+    printf("%i \n", *b);//de-reference the pointer variable
 }
 /*
 int n = 6; n is the lable, 6 is the value, so two items here. key value pairs perhaps
