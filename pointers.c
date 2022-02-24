@@ -19,13 +19,6 @@ int main(void)
     printf("%p \n", b);//read pointer variable 'b'
     printf("%i \n", *b);//de-reference the pointer variable
 }
-/*
-int n = 6; n is the lable, 6 is the value, so two items here. key value pairs perhaps
-    int *p = &n ;//pointer variables. Its' value is an address
-    printf("%p \n ", p);//so print out the contents of a pointer variable. which holds a location value
-}
-*/
-//so, two items here. Lable and value
-//so currently, the lable is the pointer
+
 
 
