@@ -19,8 +19,9 @@ int main (void)
 
 
 //################################################################
-//The function pow() is used to calculate the power raised to the base value. It takes two arguments. It returns the power raised to the base value. It is declared in “math. h” header file.
-//#################################################################
+/*The function pow() is used to calculate the power raised to the base value. It takes two arguments. It returns the power raised to the base value. 
+It is declared in “math. h” header file.*/
+#################################################################
 
 
 
