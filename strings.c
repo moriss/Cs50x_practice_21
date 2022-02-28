@@ -9,3 +9,23 @@
   
   */
 
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <math.h>
+//lecture 4
+
+int main(void)
+{
+    char *ten = "Andrew is a doughnut!";
+  
+    printf("%s \n", ten);//variable value
+    printf("%p \n", ten);//Pointer value
+}
+
+/**The first prints the actual string and the second prints out the address location via the format code '%p' **/
+
+
