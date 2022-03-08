@@ -25,6 +25,23 @@ int main(void)
 {
 
    char *y = "Emma";
+    
+   //moving through variable's addresses, moving through values in logical sequence(abc...) and moving through variable's chars.
+   
+    //moving through variable's chars.
+   printf("%c\n", y[0]);   printf("%c\n", y[1]);    printf("%c\n", y[2]);
+
+   //moving through variable's addresses
+   printf("%p\n", y); printf("%p\n", y+1); printf("%p\n", y+2);
+
+   //Accessing the next value in logical sequence, NOT the value at the next address.
+   //If value at zero is e, value at 1 is f  and so on...
+   printf("%c\n", *y+1);   printf("%c\n", *y+2);   printf("%c\n", *y+3);
+   
+   
+   //Spot the difference! Using *brackets allows you to access the actual values in the string. MORE USEFUUL THAN ABOVE!
+   printf("%c\n", *(y+1));   printf("%c\n", *(y+2));   printf("%c\n", *(y+3));
+
 
    printf("%p \n", &y);//Address where y is located
    printf("%p \n", y);//Value of y.(Address of first character)
