@@ -25,6 +25,10 @@ int main(void)
 {
 
    char *y = "Emma";
+    
+    printf("%c " ,*y);//Go to the address y is pointing to and print the value
+    
+    
    //moving through addresses and moving through values
    //Moving throught values
    printf("%c\n", y[0]);   printf("%c\n", y[1]);    printf("%c\n", y[2]);
