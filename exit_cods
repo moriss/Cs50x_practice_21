@@ -1,0 +1,8 @@
+Resource
+https://cs50.harvard.edu/ap/2021/curriculum/x/references/exit_codes.pdf
+
+My understanding is that where a program fails, main returns a none zero int, it 1 or -1.
+
+On the other hand, when using a function, ie islower, the documentation advises as follows;
+"This function (islower) returns a non-zero int if c is a lowercase letter and 0 if c is not a lowercase letter."
+
