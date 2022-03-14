@@ -1,0 +1,11 @@
+get_char - prompt a user for a char
+get_double - prompt a user for a double
+get_float - prompt a user for a float
+get_int - prompt a user for an int
+get_long - prompt a user for an long
+get_string - prompt a user for a string
+
+toupper()
+isupper()
+tolower()
+islower()
