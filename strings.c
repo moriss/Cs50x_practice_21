@@ -50,3 +50,17 @@ int main(void)
 }
 
 
+//Below is how to actually copy a string to another location in memory
+int main(void)
+{
+   char *a = get_string("word ");
+   char *t = malloc(strlen(a));//Allocate memory of the correct size to copy a into
+   for(int i = 0; i < strlen(a); i ++)
+   {
+      t[i] = a[i];//Copy a's ith's into t's ith's
+      t[0] = toupper(t[0]);//Change first letter in t to uppercase.
+   }
+   printf("%s\n%s\n", t,a);//Only t's fist letter is uppercase. a's remains lowercase.
+}
+//This assumes you have initally typed a string deliberately with a lowercase first letter.
+
