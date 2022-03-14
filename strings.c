@@ -28,4 +28,25 @@ int main(void)
 
 /**The first prints the actual string and the second prints out the address location via the format code '%p' **/
 
+//To further prove this is the case
+int main(void)
+{
+   char *a = get_string("word ");
+   char *t = a;
+   t[0] = toupper(t[0]);
+   printf("%s\n %s", a,t);
+
+}
+//The first character of BOTH a and t change to uppercase.
+
+//Interestingly in the example below, both addresses of a and t are identical (as expected),  other than the very last digit of the address.
+int main(void)
+{
+   char *a = get_string("word ");
+   char *t = a;
+   t[0] = toupper(t[0]);
+   printf("%p\n%p", &a,&t);
+
+}
+
 
