@@ -26,7 +26,8 @@ If you become disolusioned because you are spendig such a long time on coding th
 
 Think of this exercise as building a menu of tools you can use for future coding jobs. The more time you spend understanding loops/arrrays/strings etc the more you can see which tool (or combination of tools) is best suited for the specific task.
 
-Just to point and and for no particular reason, there are times when I have added ALL the libraries (at the top) for every task, regardless of whether or not they are required. And other times they are ommitted.
+Just to point out that there are times when I have added ALL the libraries (at the top) for every task, regardless of whether or not they are required. There is no particular reason for this other than laziness in not having to think about which functions come from which libraries. 
+Yes, this is lazy and I plan over time to only introduce libraries as and when required. 
 
 I am not a teacher. I created these tasks to improve my muscle memory and -as i said - develop a deeper understanding of how memory works, before working on more complex algorythms.
 
