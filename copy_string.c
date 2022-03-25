@@ -18,3 +18,16 @@ int main (void)
   x[0 ]= toupper(x[0]);//change first letter of x to uppercase to prove y is a true copy.
   printf("%s\n %s\n", y, x);//print both x and y
 }
+
+
+//Now do same using the strcpy function
+int main (void)
+{
+  char *x = "money";
+
+  printf("%s\n" ,x);
+  char *y = malloc(strlen(x)+1);
+  strcpy(y,x);
+  y[0] = toupper(y[0]);
+  printf("%s ", y);
+}
