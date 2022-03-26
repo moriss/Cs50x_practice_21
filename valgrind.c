@@ -1,1 +1,1 @@
-//Please go to memory.c
+//Please go to free_memory.c
