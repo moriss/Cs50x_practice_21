@@ -17,3 +17,28 @@
  //Next, search left half
  //elsif 50 > middle element
  //search the right half
+
+11.16
+//The Chart
+//Straight up refers to linear
+//bend to the right is more logorythmic
+  
+  //n times steps  (linear)
+  //n/2  steps (binary)
+  
+  //Moving away from search and now focussing on well designed algorythms
+  
+  //Big O italisized    aka in the order of
+  
+  //What is the efficiency of your algorythm (Your code)? You can give an approximation of this
+  
+  //Options:
+//'Your algorythm is in the order of n, or on the order of n over 2 or on the order of log base2 n.
+  
+  //Since this is only an approximation, we can have :
+  //'Your algorythm is in the order of n, or on the order of n, or on the order of log(n). (Throwing away 'n over 2' and log base 2)
+  
+  //A reason for getting rid of n over 2 and base2 is because as problems get bigger, n and n/2 get closer together, as does log(n) and log base2 n
+  
+  //14.03 in
+  
