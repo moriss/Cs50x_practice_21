@@ -42,3 +42,26 @@
   
   //14.03 in
   
+  //Running time: How long it takes for your program to complete
+  The lowwer down the chart, the faster your program
+  
+  O(n2) Means n to the power of 2
+  O(n log n)
+  O(n)        Linear search  :Worst case is that the search takes 'n' steps
+  O(log n)    Binary Search
+  O(1)
+  Above represents worst case and below (omega) represents best cases
+  
+  Omega is the opposite to big O. Omega looks at the best case. The first step may complete your search in linear/binary search
+  Omega (n2) Means n to the power of 2
+  Omega (n log n)
+  Omega (n)         
+  Omega (log n)    
+  Omega (1)        Linear search Binary Search
+  //16.54 in
+  
+  
+  
+  
+  
+  
