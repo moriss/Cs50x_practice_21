@@ -53,16 +53,16 @@
   O(n log n)                        (Not on video chart 13in)
   O(n)        Linear search  :Worst case is that the search takes 'n' steps
   O(log n)    Binary Search  :Binary worst case is better than linear. Ie, takes less steps
-  O(1)                              (Not on video chart 13in)
+  O(1)                              (Not on video chart 13in) 1 refers to 1 step
   Above represents worst case and below (omega) represents best cases
   
   Omega is the opposite to big O. Omega looks at the best case. Ei: you may find 50 at the first step.  
     
   Omega (n2) Means n to the power of 2          (Not on video chart 13in)
   Omega (n log n)                               (Not on video chart 13in)
-  Omega (n)         
+  Omega (n)     (An element count would be placed here. Your output needs to be maximum number of elements present)    
   Omega (log n)    
-  Omega (1)        Linear search Binary Search  (Not on video chart 13in)
+  Omega (1)        Linear search Binary Search  (Not on video chart 13in) 1 refers to one step
   //16.54 in
   
   
