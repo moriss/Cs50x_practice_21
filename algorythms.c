@@ -1,6 +1,6 @@
 //11.03 in of week 3
 //https://cs50.harvard.edu/x/2020/weeks/3/
-//Linear Search: Search each element in an array one at a time in a line.  aka an alogorythm ie: searching for the number 50
+//Linear Search: Search each element in an array one at a time in a line.  aka an alogorythm search ie: searching for the number 50
 //for i from 0 to n-1
   //if the i'th element is 50, return true;  (The  bool)
 
@@ -8,10 +8,13 @@
 
 
 
-//Bineary Search Divide and conquer aka binary search
+//Bineary Search Divide and conquer aka binary search. I think binary search refers to searching either half each time. 
+//Before binary search can be done, numbers need to be sorted a-z in value. EG: 1, 3, 24 , 36 , 50 , 87 etc...
+//First check middle element. If ME is larger than fifity, check middle element of new left half.
+//if less than fifty, check ME of new right half and so on.
 
 //if not in list
- //return false
+ //return false. (This is required in case the number is not there)
  //if middle item is 50: return true
  //elsif 50 < middle element
  //Next, search left half
@@ -43,21 +46,23 @@
   //14.03 in
   
   //Running time: How long it takes for your program to complete
+  
   The lowwer down the chart, the faster your program
   
-  O(n2) Means n to the power of 2
-  O(n log n)
+  O(n2) Means n to the power of 2   (Not on video chart 13in)
+  O(n log n)                        (Not on video chart 13in)
   O(n)        Linear search  :Worst case is that the search takes 'n' steps
-  O(log n)    Binary Search
-  O(1)
+  O(log n)    Binary Search  :Binary worst case is better than linear. Ie, takes less steps
+  O(1)                              (Not on video chart 13in)
   Above represents worst case and below (omega) represents best cases
   
-  Omega is the opposite to big O. Omega looks at the best case. The first step may complete your search in linear/binary search
-  Omega (n2) Means n to the power of 2
-  Omega (n log n)
+  Omega is the opposite to big O. Omega looks at the best case. Ei: you may find 50 at the first step.  
+    
+  Omega (n2) Means n to the power of 2          (Not on video chart 13in)
+  Omega (n log n)                               (Not on video chart 13in)
   Omega (n)         
   Omega (log n)    
-  Omega (1)        Linear search Binary Search
+  Omega (1)        Linear search Binary Search  (Not on video chart 13in)
   //16.54 in
   
   
