@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <math.h>
-void mali(void);
 //Compare 2 strings to test if they are the same
 int main (void)
 {
