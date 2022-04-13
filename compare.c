@@ -18,3 +18,40 @@ int main (void)
   printf("Different");
   //If return wasn't used above, both 'same' and 'different' would show on screen.
 }
+
+
+
+//Search for a name within a group of names
+int main (void)
+{
+  char *names[3] = {"Emma", "Steven", "George"};//Create an array of names
+  char *a = "Emma";//Put "Emma" into a variable called a
+  for(int i = 0; i < strlen(a); i ++)//Loop through every char of every string
+  {
+    if(strcmp(names[i], a) == 0)//Zero means one of the names are Emma. Otherwise it is less than zero or more than zero if greater or less than (see below)
+  {
+    printf("Success");// If Emma is present
+    return 0;
+  }
+  printf("Not Found!");//Of Emma mpt present
+  return 1;
+  }
+}
+//C uses the ascii numerical value (int) of each character to compare if equal, greater than or less than.
+
+//Type a name to test if present
+int main (void)
+{
+  char *names[] = {"Emma", "Steven", "George"};
+  char *a = get_string("Enter Name: ");
+  for(int i = 0; i < strlen(a); i ++)
+  {
+    if(strcmp(names[i], a) == 0)
+  {
+    printf("Success");
+    return 0;
+  }
+  printf("Not Found!");
+  return 1;
+  }
+}
