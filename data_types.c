@@ -15,6 +15,17 @@ main (void)
    
 }  
 
+//#########################
+//Qick bite size check per datatype
+bool	1 bite
+char	1 bite
+int	4 bites
+float	4 bites
+double	8 bites
+long 	8 bites
+string ??bites
+//########################
+
 //Types, formats, operators
 
 //There are other types we can use for our variables
