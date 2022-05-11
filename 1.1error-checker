@@ -3,6 +3,18 @@ Error checker
 Here I have noted down some common errors I make in my code. It's useful to read over it every now and then to cut down on the time in identifying and correcting 
 errors as they arise. I try to paste the error message (when i remember to) as a helpful guide (for non logical errors).
 
+###########
+11th May 22
+echo and variables
+
+echo "$jon[3] $jon[2] $jon[1] $jon[0]";
+Using speech marks respects one space between variables
+
+echo $jon[3] , $jon[2] , $jon[1] , $jon[0];
+Using commas instead does not.
+#########
+
+#########
 Logical Error 3rd April 22
 Using an if statement without the else.
 'return' is used to stop the program at the relevant point. Where a condition is met, the program needs to return 0(by convention). But when the conditio
