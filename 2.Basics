@@ -1,0 +1,13 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <cs50.h>
+#include <string.h>
+#include <ctype.h>
+//Ask someone their name and print "hello" and their name
+
+int main(void)
+{
+    char * sink = get_string("What is your name? ");
+    
+    printf("Hello %s \n ", sink);
+}
