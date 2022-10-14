@@ -12,3 +12,10 @@ int main(void)
     printf("Hello %s \n ", sink);// printf is taking two inputs (separated by a coma)
 }
 // %s is a placeholder for a variable
+
+//ALTERNATIVE TO ABOVE
+int main(void)
+{
+    printf("Hello %s \n ", get_string("What is your name? "));
+}
+// Not as tidy but shows you can plug the get_string function straight into the printf function as an input
