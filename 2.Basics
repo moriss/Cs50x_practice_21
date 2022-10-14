@@ -9,5 +9,6 @@ int main(void)
 {
     char * sink = get_string("What is your name? ");
     
-    printf("Hello %s \n ", sink);
+    printf("Hello %s \n ", sink);// printf is taking two inputs (separated by a coma)
 }
+// %s is a placeholder for a variable
