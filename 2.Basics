@@ -9,7 +9,7 @@ int main(void)
 {
     char * sink = get_string("What is your name? ");
     
-    printf("Hello %s \n ", sink);// printf is taking two inputs (separated by a coma)
+    printf("Hello %s \n ", sink);// printf is taking two inputs (separated by a coma). AKA arguments or peramatures.
 }
 // %s is a placeholder for a variable
 
