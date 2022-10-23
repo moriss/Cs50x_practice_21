@@ -66,7 +66,8 @@ string ??bites
 
 
 // #########################
-//void, a type but not a data type. For functions that don't return a value eg printf. The Result is not caputered and stored,  just printed on screen as a side event. Therefore, printf is a void function.
+//void, a type but not a data type. For functions that don't return a value eg printf. The Result is not caputered and stored,  just printed on screen 
+//as a side event. Therefore, printf is a void function.
 
 // void my(void)  : parameters can also be void. EG: no arguments get passed into main.
 
