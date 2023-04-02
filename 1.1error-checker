@@ -3,6 +3,23 @@ Error checker
 Here I have noted down some common errors I make in my code. It's useful to read over it every now and then to cut down on the time in identifying and correcting 
 errors as they arise. I try to paste the error message (when i remember to) as a helpful guide (for non logical errors).
 
+March 23
+##############
+The incrementing 'x' here, causes the program to (wrongly) run forever. The incrementing x needs to be placed within the confines of the 'do' in this do while loop.
+int main(void)
+{
+    int x = 0;//Set 'x' to zero
+    do {
+            printf("Q ");//print this then...
+            //x ++ should be here.
+        }
+    while (x <= 2);//keep printing while 'x' is less than or equal to 2
+    x ++;// Placing the incrementing int here, causes the program to run forever.
+    //It needs to be within the confines of the 'do' in this do while loop.
+}
+
+
+
 ###########
 11th May 22
 echo and variables
