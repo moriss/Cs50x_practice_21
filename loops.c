@@ -102,6 +102,8 @@ int main (void)
 
 // 2) do while loop. 
 //Use when you want it to run at least once. EG prompt the user for input.
+//A do while loop checks the condition lastly. In other words, the boolean expression is at the bottom.
+
 do
 {
 	This
