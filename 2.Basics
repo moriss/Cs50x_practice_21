@@ -19,3 +19,14 @@ int main(void)
     printf("Hello %s \n ", get_string("What is your name? "));
 }
 // Not as tidy but shows you can plug the get_string function straight into the printf function as an input
+
+
+void my(); //Interestingly, the input of the prototype can remain blank and it still works.
+int main()
+{
+    my("David");//Hard-code the input string 
+}
+void my(char * x)//Make sure the datatype is a string
+{
+    printf("hello %s \n" , x);
+}
