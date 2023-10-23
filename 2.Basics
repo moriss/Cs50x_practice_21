@@ -30,3 +30,22 @@ void my(char * x)//Make sure the datatype is a string
 {
     printf("hello %s \n" , x);
 }
+
+//##################################
+//Remember to always create your own function after testing it in main
+//Ask someone their name and print "hello" and their name
+//Ultimately, do this by returning a value from your function and saving the value in a variable in main and print it out
+char * my(char * x);
+int main()
+{
+    char * ih = get_string("what is your name? ");
+    char * b = my(ih);
+   printf("Hello %s \n " , b );
+}
+
+char* my(char * x)
+{
+    return x;
+}
+
+
