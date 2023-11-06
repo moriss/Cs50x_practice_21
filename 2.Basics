@@ -5,6 +5,8 @@ EG: cd Desktop   cd 'c programing'
 To run the file: Firstly you may need to open another terminal window as the one you used to open gedit will be busy.
 gcc first_project.c -o firstproject (So here you are accessing the correct file via gcc then creating a binary file with -o <anyfilename> , You then run the binary file provided there are no errors: ./anyfilename
 
+Your next step is to download the cs50 library onto your local computer.
+
 #include <cs50.h>//These are Libraries with access to get_string etc
 #include <stdio.h>//Means standerd input/output for access to printf etc
 #include <cs50.h>
