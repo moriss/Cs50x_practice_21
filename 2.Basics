@@ -1,11 +1,14 @@
 You have included instructions on setting up your workspace on a local laptop terminal:
-Using your terminal, nagivgate to the location of your file
+Using your terminal, navigate to the location of your file
 EG: cd Desktop   cd 'c programing'  
     You can open the file (to edit or right your code) with;  gedit <filename.c>  (gedit is the installed text editor)
 To run the file: Firstly you may need to open another terminal window as the one you used to open gedit will be busy.
-gcc first_project.c -o firstproject (So here you are accessing the correct file via gcc then creating a binary file with -o <anyfilename> , You then run the binary file provided there are no errors: ./anyfilename
+gcc first_project.c -o firstproject (So here you are accessing the correct file via gcc then creating a binary file with -o <anyfilename>[no extension] , You then run the binary file provided there are no errors: ./anyfilename
 
 Your next step is to download the cs50 library onto your local computer.
+You were advised by chatopen ai to create a cs50 folder with your home directory. So your home directory now has the folders bodhi and cs50.
+The comand for creating the cs50 folder: sudo mkdir cs50
+Next step is to place the cs50 library in the cs50 folder.
 
 #include <cs50.h>//These are Libraries with access to get_string etc
 #include <stdio.h>//Means standerd input/output for access to printf etc
