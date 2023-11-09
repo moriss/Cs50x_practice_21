@@ -5,10 +5,18 @@ EG: cd Desktop   cd 'c programing'
 To run the file: Firstly you may need to open another terminal window as the one you used to open gedit will be busy.
 gcc first_project.c -o firstproject (So here you are accessing the correct file via gcc then creating a binary file with -o <anyfilename>[no extension] , You then run the binary file provided there are no errors: ./anyfilename
 
+
 Your next step is to download the cs50 library onto your local computer.
+You need to install git onto your computer beforehand.
+You successfully installed git version 2.17.1
+
+Stopped here
+
 You were advised by chatopen ai to create a cs50 folder with your home directory. So your home directory now has the folders bodhi and cs50.
 The comand for creating the cs50 folder: sudo mkdir cs50
 Next step is to place the cs50 library in the cs50 folder.
+You can do this via the terminal if git is installed on your system.
+Otherwise you need to go to https://github.com/cs50/libcs50 (This didn't work as your system does not have an extract option. Nor does tar work as advised by chatgpt
 
 #include <cs50.h>//These are Libraries with access to get_string etc
 #include <stdio.h>//Means standerd input/output for access to printf etc
