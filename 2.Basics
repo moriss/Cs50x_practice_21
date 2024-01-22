@@ -1,22 +1,84 @@
+Useful when internet is down. 
+Delete here when added to github
+
+23 nov 2023
+Cs50x_practice_21/edit/main/2.Basics
+
 You have included instructions on setting up your workspace on a local laptop terminal:
 Using your terminal, navigate to the location of your file
-EG: cd Desktop   cd 'c programing'  
-    You can open the file (to edit or right your code) with;  gedit <filename.c>  (gedit is the installed text editor)
-To run the file: Firstly you may need to open another terminal window as the one you used to open gedit will be busy.
-gcc first_project.c -o firstproject (So here you are accessing the correct file via gcc then creating a binary file with -o <anyfilename>[no extension] , You then run the binary file provided there are no errors: ./anyfilename
+The files for these exercises reside at Desktop>git_cs50_practice_2021
+The current file is called...
+first.c
+  
+You can open the file (to edit or right your code) with;  gedit <filename.c>  (gedit is the installed text editor)
+
+To run the file, use the following comand: 
+gcc <filename.c> -o first (So here you are accessing the correct file via gcc then creating a binary file with -o <anyfilename>[no extension] , You then run the binary file provided there are no errors: ./anyfilename
+
+Your code should run at this point.
 
 
 Your next step is to download the cs50 library onto your local computer.
 You need to install git onto your computer beforehand.
 You successfully installed git version 2.17.1
 
-Stopped here
+First:
+sudo apt update : This ensures you have the latest information about available packages. Good practice to do this before installing any new software.
 
-You were advised by chatopen ai to create a cs50 folder with your home directory. So your home directory now has the folders bodhi and cs50.
+Then:
+sudo apt install git  : This installs git.
+
+
+
+You were advised by chatopen ai to create a cs50 folder within your home directory. However, files only seem to be 'read only' when opened in this location (even when using sudo) and the terminal throws up warnings whenever you try to open a file via gedit <filename>. 
+
+
+Stopped here
+So I have cloned the library again but this time at Desktop > cs50_library. It came (cloned) with this name.
+
+Stopped here: 
+
+You are using the chatgpt "compile c functions on bodhi" chat and writing code in git_cs50_practice_2021>first.c to get familiar with writing code BEFORE you try to use the cs50 library.
+
+So in order to run a 'program'
+create your .c file
+You need :
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+these up top.
+
+And to this to run your code:
+gcc first.c -o first  (To compile your code into the "first" binary file.
+then:
+./first  (to run your code)
+
+You can then write your code but don't include anything from the cs50 library as yet.
+You could try to write more code and see if you can skirt around the cs50 library code. 
+
+**Study previous code you wrote before moving on.**
+
+Your next job is to link in the cs50 library correctly and start using their functions.
+
+
+
+
+
+
+Refer to the chatgpt dialogue:
+So here are the instructions to clone the cs50 library onto your laptop.
+Type this into the comand line at the desired location. In your case, you created a git folder in your home directoryand cloned it there.
+Please note: You need 'sudo' to have the permissions to do this task.
+
+sudo git clone https://github.com/cs50/libcs50.git
+
 The comand for creating the cs50 folder: sudo mkdir cs50
-Next step is to place the cs50 library in the cs50 folder.
-You can do this via the terminal if git is installed on your system.
-Otherwise you need to go to https://github.com/cs50/libcs50 (This didn't work as your system does not have an extract option. Nor does tar work as advised by chatgpt
+
+Ok so this is where things might get a little complicated.
+Since it is much easier to compile your programs within the newly cloned cs50 library, this is what we will do. 
+
+So we will not move away from git_cs50_practice_2021 and move over to home/cs50. We can then copy files over to other relevant locations.
+
 
 #include <cs50.h>//These are Libraries with access to get_string etc
 #include <stdio.h>//Means standerd input/output for access to printf etc
@@ -67,5 +129,6 @@ char* my(char * x)
 {
     return x;
 }
+
 
 
