@@ -1,0 +1,87 @@
+Up to now, you have been creating small functions in carllaptop/Desktop/git_cs50_practice_2021 > first.c  as a way to increase your understanding of how coding works. You are taking a brief break from this in order to push all updated files to your github.
+
+I'm getting chatgpt to help me with this, so below is the chat(named Change File Name). I will ask further questions as I go to help clarify anything. 
+
+1.
+So it is asking me to firstly 'stage' the changes I want to commit
+git add .     I think the dot refers to staging ALL files.Otherwise you would simply name all the files you want to stage. 
+
+
+These are extra questions I had. Try and implement them into the chat as you ask further clarifying questions.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Further question: What is 'staging' exactly and what does the dot refer to in git add .
+Answer:
+Staging allows you to selectively choose which changes(files) you want to include in your next commit. The staging area serves as a middle ground between your working directory (where you make changes) and your Git repository (where changes are committed).
+
+# Stage all changes in the current directory and its subdirectories
+git add .
+
+
+Stage multiple specific files:
+git add file1.txt file2.txt file3.txt
+
+
+Stage all changes in the current directory and its subdirectories:
+git add .
+
+
+Stage changes in a specific directory:
+git add path/to/directory/
+Please note that this directory does not need to match a directory name on github. However, the filenames MUST match in order for the update to work.
+You can also push files to github that have been created locally but don't yet exist on github. 
+Her's how to do it:
+Stage and Commit the new File:
+As above, stage the new file using the git add command, and then commit your changes with a meaningful commit message, as follows:
+git add newfile.txt
+
+
+NOW IT'S TIME TO ACT.
+STAGING
+git add .
+Ok so we're getting an error.     not a git repository   I'm guessing this means that I have simply created a local directory with files that match what's on my github. BUT THE LOCAL DIRECTORY IS NOT A GIT REPOSITORY.
+So I think the best thing to do is paste local files into github files so they are all updated then pull the directory to a desired local location so I have the github repo saved locally. This will enable me to push updates of all files in future.  
+
+
+COMMITTING
+git commit -m "write something meaninfull here"
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+My username is moriss
+My password might be G56i10T12@
+Then it tells me to commit my changes
+git commit -m "Type a message here"
+
+
+
+
+
+Link your local repository to GitHub:
+
+
+
+Below is a side note to add any Git repository to GitHub Desktop, even if it's not a GitHub repository.
+NOt currently relevant but could be useful.
+#######
+I found the below resource to specifically help me 
+Resource:https://docs.github.com/en/desktop/adding-and-cloning-repositories/adding-a-repository-from-your-local-computer-to-github-desktop
+You can add any Git repository to GitHub Desktop, even if it's not a GitHub repository.
+#######
+
+
+
+If you haven't linked your local repository to your GitHub repository, use the following command, replacing <your-username> and <repository-name> with your GitHub username and repository name: 
+
+git remote add origin https://github.com/<your-username>/<repository-name>.git
+
+
+
+Push your changes to GitHub:
+Finally, push your committed changes to GitHub:
+
+git push -u origin master
+
+
+If you are working on a branch other than master, replace "master" with the name of your branch.
+
+Make sure you have the necessary permissions to push to the repository on GitHub. You may need to enter your GitHub username and password during the push process. If you prefer not to enter your password each time, consider using SSH keys for authentication.
