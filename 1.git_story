@@ -1,5 +1,7 @@
 Up to now, you have been creating small functions in carllaptop/Desktop/git_cs50_practice_2021 > first.c  as a way to increase your understanding of how coding works. You are taking a brief break from this in order to push all updated files to your github.
 
+Before I get chat gpt to help me with this, I'm going to update all local files to github by copy paste, then clone github to local. 
+
 I'm getting chatgpt to help me with this, so below is the chat(named Change File Name). I will ask further questions as I go to help clarify anything. 
 
 1.
@@ -40,6 +42,10 @@ STAGING
 git add .
 Ok so we're getting an error.     not a git repository   I'm guessing this means that I have simply created a local directory with files that match what's on my github. BUT THE LOCAL DIRECTORY IS NOT A GIT REPOSITORY.
 So I think the best thing to do is paste local files into github files so they are all updated then pull the directory to a desired local location so I have the github repo saved locally. This will enable me to push updates of all files in future.  
+In addition to this I have just added 1.git_story , 1.terminal_commands , basics and readme to the github repo cs50x_practice_21  (The official repo name on gitub) 
+
+STOPPED HERE
+So the next step is to pull the repo locally (all files) so you can begin working on them and easily updating then onto github as you go.
 
 
 COMMITTING
