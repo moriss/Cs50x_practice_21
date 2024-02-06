@@ -1,18 +1,16 @@
-Up to now, you have been creating small functions in carllaptop/Desktop/git_cs50_practice_2021 > first.c  as a way to increase your understanding of how coding works. You are taking a brief break from this in order to push all updated files to your github.
+Up to now, you have been creating small functions in carllaptop/Desktop/git_cs50_practice_2021 > first.c  as a way to increase your understanding of how coding works. 
 
-31st jan 24
+You are taking a brief break from this in order to push all updated files to your github.
 
-this is the newest in beta 
-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
+You have done this successfully and full explanations on how this is done is at drive/AA Terminal/git authentication and AAATerminal Commands.
 
-And lets go again!; 
+You are pausing and focusing on the cs50 git video as a refresher. The link is in the drive file.
 
-Before I get chat gpt to help me with this, I'm going to update all local files to github by copy paste, then clone github to local. 
 
-git_story = done
 
-This is my github token: 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
 
+
+BELOW CAN BE LOOKED THROUGH LATER. FOCUS FOR NOW ON THE DRIVE FILES FOR AUTHENTICATION AND COMMANDS
 So now it's time to clone to local.
 git clone https://github.com/username/repository.git
 This was successful. All files on github are now on your local machine. 
@@ -21,7 +19,6 @@ STOPPED HERE
 The next step is to make changes and push updates from local to github.
 
 AND JUST BEAR IN MIND YOU NEED TO NOW BE WORKING ON THE NEWLY CLONED FILES AT DESKTOP/cs50x_practice_21
-AND ALSO THAT EVENTUALLY YOU WILL NEED TO MOVE CLONING ETC INSTRUCTIONS TO SOMEWHERE MORE CENTRAL.
 
 
 I'm getting chatgpt to help me with this, so below is the chat(named Change File Name). I will ask further questions as I go to help clarify anything. 
