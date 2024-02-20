@@ -82,6 +82,7 @@ string ??bites
 // %f for floats, doubles
 // %i for ints
 // %li for longs
+// %lf for doubles (double-precision floating point type)
 // %s for strings
 
 // And there are some mathematical operators we can use:
