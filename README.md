@@ -1,4 +1,10 @@
-This file to be pasted into your github site at github cs50_practice_21 > Readme
+12th february 24
+A VERY IMPORTANT UPDATE
+You have created a cs50_story file which offers a more comprehensive reference to your journey through coding and all it entails. Once you feel you have a decent mastery of something then it can be added to other files in a more susinct way.
+
+So this has become your first port of call for now. 
+
+
 
 8th January 24
 This file is the first port of call when doing cs50 practice 21 so you know where you are overall. After all, it's easy to get lost!
@@ -6,10 +12,7 @@ This file is the first port of call when doing cs50 practice 21 so you know wher
 You are currently updating your github basics file locally on Carl's laptop :Desktop git_cs50_practice_2021 > git_basics  (Same location as this file)
 As normal, there should be a 'stopped here' location as your starting point.
 
-A VERY IMPORTANT UPDATE
-You have created a cs50_story file which offers a more comprehensive reference to your journey through coding and all it entails. Once you feel you have a decent mastery of something then it can be added to other files in a more susinct way.
 
-So this has become your first port of call for now. 
 
 
 
