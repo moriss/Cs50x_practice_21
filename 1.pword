@@ -1,5 +1,6 @@
 git remote set-url origin https://moriss:ghp_8DdMaGBIMQ7hXDXobchairH1wnsH52nsy24XU3b4@github.com/moriss/Cs50x_practice_21.git
 
+ghp_8DdMaGBIMQ7hXDXobchairH1wnsH52nsy24XU3b4
 
 So when you are prompted for you password in future it should work by pasting the personal access token abvove.
 
