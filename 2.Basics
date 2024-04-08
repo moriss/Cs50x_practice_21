@@ -1,48 +1,11 @@
-Useful when internet is down. 
-Delete here when added to github
-
-23 nov 2023
 Cs50x_practice_21/edit/main/2.Basics
 
-You have included instructions on setting up your workspace on a local laptop terminal:
-Using your terminal, navigate to the location of your file
-The files for these exercises reside at Desktop>git_cs50_practice_2021
-The current file is called...
-first.c
-  
-You can open the file (to edit or right your code) with;  gedit <filename.c>  (gedit is the installed text editor)
+Now that the cs50 library is installed on blue, next step is to check it works correctly on carl. 
 
-To run the file, use the following comand: 
-gcc <filename.c> -o first (So here you are accessing the correct file via gcc then creating a binary file with -o <anyfilename>[no extension] , You then run the binary file provided there are no errors: ./anyfilename
-
-Your code should run at this point.
+##You are using onetest.c to test this on carl.##
 
 
-Your next step is to download the cs50 library onto your local computer.
-You need to install git onto your computer beforehand.
-You successfully installed git version 2.17.1
-
-First:
-sudo apt update : This ensures you have the latest information about available packages. Good practice to do this before installing any new software.
-
-Then:
-sudo apt install git  : This installs git.
-
-
-
-You were advised by chatopen ai to create a cs50 folder within your home directory. However, files only seem to be 'read only' when opened in this location (even when using sudo) and the terminal throws up warnings whenever you try to open a file via gedit <filename>. 
-
-
-Stopped here
-So I have cloned the library again but this time at Desktop > cs50_library. It came (cloned) with this name.
-
-Stopped here: 
-
-You are using the chatgpt "compile c functions on bodhi" chat and writing code in git_cs50_practice_2021>first.c to get familiar with writing code BEFORE you try to use the cs50 library.
-
-So in order to run a 'program'
-create your .c file
-You need :
+#inlude <cs50.h>
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>

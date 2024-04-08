@@ -1,12 +1,11 @@
-The plan is to comb-through and properly categorize different parts of C. You want to be able to easily reference  
+The plan is to comb-through and properly categorize different parts of C within Cs50x_practice_21.
+This may take the form of a useful introductory list of commands. 
+
+The file we are on is 2.Basics  
 
 8th april 24
 Fist we need to make sure that the cs50 library is functioning on carl as it is on blue
  
-[Instructions are on drive/AATerminal/cs50 library locally].
-
-gcc -o your_program your_c_file.c -I./libcs50/src -L./libcs50 -lcs50
-
 
 
 ONLY DO BELOW ONCE YOU HAVE CS50 LIBRARY WORKING ON CARL.
