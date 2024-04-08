@@ -1,15 +1,51 @@
-Up to now, you have been creating small functions in carllaptop/Desktop/git_cs50_practice_2021 > first.c  as a way to increase your understanding of how coding works. 
+The plan is to comb-through and properly categorize different parts of C. You want to be able to easily reference  
 
-You are taking a brief break from this in order to push all updated files to your github.
+[The cs50 library was successfully cloned onto blue and is working. Instructions are on drive/AATerminal/cs50 library locally.
+TChatgpt title : 
+So here we go:]
 
-You have done this successfully and full explanations on how this is done is at drive/AA Terminal/git authentication and AAATerminal Commands.
+#######################
+FROM CHAT GPT
+If the only files in the src directory are cs50.h and cs50.c, it means that the cs50 library has not been compiled into a library file (such as libcs50.a or libcs50.so) yet. To compile the cs50 library into a library file, you'll need to follow these steps:
 
-You are pausing and focusing on the cs50 git video as a refresher. The link is in the drive file.
+Compile cs50.c into an Object File: First, compile the cs50.c source file into an object file (cs50.o). You can do this using the gcc command:
+gcc -c -o cs50.o src/cs50.c
+
+TO BE CLEAR, THE CS50.O OBJECT FILE SHOULD NOT BE IN THE SRC FOLDER BUT THE FOLDER ABOVE, WHERE YOU WILL RUN YOUR C FILES YOU CREATE.
+
+
+NOW IT'S TIME TO :
+Create the Library File: After compiling the object file, create the cs50 library file (libcs50.a) using the ar command:
+ar rcs libcs50.a cs50.o
+
+
+
+gcc -o your_program your_c_file.c -I./libcs50/src -L./libcs50 -lcs50
+
+######################
+
+So for starters, I didn't know you had to compile the library into a library file. I should look into this to clarify. It might mean you are converting the file to a binary file?
+
+
+
+
+The references you use are the notes you have made in various files you created in this repo.
+Currently you are on 2.Basics. It;s a case of tidying up these files and developing a deeper understanding of what's going on. 
+
+You have cloned this repo to blue and carl. 
+
+You worked through the cs50 git video as a refresher. The link is in the drive file.
+
+So your next step should be to download the cs50 library so you can easily link it to your first.c file.
+
+
+git clone https://github.com/cs50/libcs50.git
 
 
 
 
 
+THE STEPS BELOW ARE SIMILAR TO WHATS IN YOUR GOOGLE DRIVE/AA TERMINAL FOLDER
 BELOW CAN BE LOOKED THROUGH LATER. FOCUS FOR NOW ON THE DRIVE FILES FOR AUTHENTICATION AND COMMANDS
 So now it's time to clone to local.
 git clone https://github.com/username/repository.git
