@@ -1,14 +1,31 @@
-Up to now, you have been creating small functions in carllaptop/Desktop/git_cs50_practice_2021 > first.c  as a way to increase your understanding of how coding works. 
+The plan is to comb-through and properly categorize different parts of C. You want to be able to easily reference  
 
-21st March 24
-You want to be able to use the cs50 library locally. Several attempts to get it working have failed so it's time to start from scratch again. Once successful, you want to find a place to record your successful attempt for future reference. 
+8th april 24
+Fist we need to make sure that the cs50 library is functioning on carl as it is on blue
+ 
+[Instructions are on drive/AATerminal/cs50 library locally].
 
-So the chatgpt is titled: 
+gcc -o your_program your_c_file.c -I./libcs50/src -L./libcs50 -lcs50
+
+
+
+ONLY DO BELOW ONCE YOU HAVE CS50 LIBRARY WORKING ON CARL.
+Currently you are on 2.Basics. It;s a case of tidying up these files and developing a deeper understanding of what's going on. 
+
+You have cloned this repo to blue and carl. 
+
+You worked through the cs50 git video as a refresher. The link is in the drive file.
+
+So your next step should be to download the cs50 library so you can easily link it to your first.c file.
+
+
+git clone https://github.com/cs50/libcs50.git
 
 
 
 
 
+THE STEPS BELOW ARE SIMILAR TO WHATS IN YOUR GOOGLE DRIVE/AA TERMINAL FOLDER
 BELOW CAN BE LOOKED THROUGH LATER. FOCUS FOR NOW ON THE DRIVE FILES FOR AUTHENTICATION AND COMMANDS
 So now it's time to clone to local.
 git clone https://github.com/username/repository.git
