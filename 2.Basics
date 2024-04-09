@@ -1,9 +1,11 @@
 Cs50x_practice_21/edit/main/2.Basics
 
-Now that the cs50 library is installed on blue, next step is to check it works correctly on carl. 
+
 
 ##You are using onetest.c to test this on carl.##
-
+##onetest.c hasn't saved to remote so for blue I am using AAtest.c ###
+##AAtest.c hasn't saved to remote so for carl I am using onetest.c ###
+Above needs sorting!
 
 #inlude <cs50.h>
 #include <stdio.h>

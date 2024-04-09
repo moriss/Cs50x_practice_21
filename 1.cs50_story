@@ -1,11 +1,24 @@
-The plan is to comb-through and properly categorize different parts of C within Cs50x_practice_21.
-This may take the form of a useful introductory list of commands. 
+9th April 24
 
-The file we are on is 2.Basics  
+You are on the 2.basics file.
 
-8th april 24
-Fist we need to make sure that the cs50 library is functioning on carl as it is on blue
- 
+We can start by writing some simple c code here directly into main with notes.
+
+Looking forward, Should we consider simplifying this repo into an easy look-up reference for C code?
+For each strip of code we could consider different scenarios, something like:
+1. Written directly into main
+2. Written with an input and no output
+3. Written as a function with an ouput but no input (if possible)
+4. Written with both an input and output
+5. Save the input into a variable.
+You may well need to ammend the base code to adjust for these different scenarios.
+
+
+
+###STOPPED HERE#####
+
+Work through below, gradually moving and deleting as you go.
+
 
 
 ONLY DO BELOW ONCE YOU HAVE CS50 LIBRARY WORKING ON CARL.
