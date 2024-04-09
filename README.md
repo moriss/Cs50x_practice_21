@@ -1,3 +1,21 @@
+9th April 24
+#####################
+You are going to be working on the files in this repo to convert them into a more digestible and easy to access resource for introductory C code.
+
+This file explains where you are. It will also be a chronological reference point as to the tasks you've had to carry out such as cloning github locally and using the cs50 library locally etc, and where you have put instructions/guides on how to do these. 
+
+I don't think you need the cs50_story file as well since it just makes things more confusing. 
+
+I'll try and keep quick reference info at the top of this file and otherwise show a chronological block of important notes with the latest on top. 
+
+So I should be able to know fairly quickly, what stage I am at in this repo by looking at the most up to date block of info.
+#######################
+
+9th April 24
+So I need to now move any important information from cs50 story to here then delete that file. 
+
+
+
 12th february 24
 A VERY IMPORTANT UPDATE
 You have created a cs50_story file which offers a more comprehensive reference to your journey through coding and all it entails. Once you feel you have a decent mastery of something then it can be added to other files in a more susinct way.

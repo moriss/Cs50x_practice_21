@@ -1,12 +1,11 @@
 Cs50x_practice_21/edit/main/2.Basics
 
+Remember to git pull before starting. 
 
-
-##You are using onetest.c to test this on carl.##
-##onetest.c hasn't saved to remote so for blue I am using AAtest.c ###
-##AAtest.c hasn't saved to remote so for carl I am using onetest.c ###
+Stick with AAtest.c in Cs50x_practice_21 for working through/categorizing code. 
 Above needs sorting!
 
+These are the headers to use for you .c file
 #inlude <cs50.h>
 #include <stdio.h>
 #include <string.h>
@@ -14,21 +13,19 @@ Above needs sorting!
 these up top.
 
 And to this to run your code:
-gcc first.c -o first  (To compile your code into the "first" binary file.
-then:
-./first  (to run your code)
 
-You can then write your code but don't include anything from the cs50 library as yet.
-You could try to write more code and see if you can skirt around the cs50 library code. 
+gcc -o AAtest /home/maurizio/Desktop/Cs50x_practice_21/AAtest.c -I../libcs50/src -L../libcs50 -lcs50
+Notice that the double dots are for one directory above. 
 
-**Study previous code you wrote before moving on.**
-
-Your next job is to link in the cs50 library correctly and start using their functions.
+So lets start with datatypes.c
 
 
 
 
 
+
+
+DEAL WITH BELOW LATER. IT MAY BE USEFUL TO ADD TO THE RELEVANT DRIVE FILE
 
 Refer to the chatgpt dialogue:
 So here are the instructions to clone the cs50 library onto your laptop.
