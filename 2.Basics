@@ -1,9 +1,7 @@
-Cs50x_practice_21/edit/main/2.Basics
 
-Remember to git pull before starting. 
 
 Stick with AAtest.c in Cs50x_practice_21 for working through/categorizing code. 
-Above needs sorting!
+
 
 These are the headers to use for you .c file
 #inlude <cs50.h>

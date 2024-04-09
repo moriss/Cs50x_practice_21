@@ -1,6 +1,8 @@
 9th April 24
+
+Below hash block stays on top but can be changed. Updates are latest on top.
 #####################
-You are going to be working on the files in this repo to convert them into a more digestible and easy to access resource for introductory C code.
+You are going to be working on the files in this repo to convert them into a more digestible and easy-to-access resource for introductory C code.
 
 This file explains where you are. It will also be a chronological reference point as to the tasks you've had to carry out such as cloning github locally and using the cs50 library locally etc, and where you have put instructions/guides on how to do these. 
 
@@ -11,9 +13,30 @@ I'll try and keep quick reference info at the top of this file and otherwise sho
 So I should be able to know fairly quickly, what stage I am at in this repo by looking at the most up to date block of info.
 #######################
 
-9th April 24
-So I need to now move any important information from cs50 story to here then delete that file. 
 
+
+9th April 24
+So I moved any important information from cs50_story to here and now the l.cs50_story file just contains the words "file not in use"
+
+Then move onto working through the 2.basics file.
+
+You are using AAtest.c for your code examples.ge
+
+Looking forward, Should we consider simplifying this repo into an easy look-up reference for C code?
+For each strip of code we could consider different scenarios, something like:
+1. Written directly into main
+2. Written with an input and no output
+3. Written as a function with an ouput but no input (if possible)
+4. Written with both an input and output
+5. Save the input into a variable.
+You may well need to ammend the base code to adjust for these different scenarios.
+
+
+
+
+
+
+OLDER
 
 
 12th february 24
@@ -22,7 +45,7 @@ You have created a cs50_story file which offers a more comprehensive reference t
 
 So this has become your first port of call for now. 
 
-
+gedit --new-window /home/bodhi/Desktop/Cs50x_practice_21/1.cs50_story
 
 8th January 24
 This file is the first port of call when doing cs50 practice 21 so you know where you are overall. After all, it's easy to get lost!
