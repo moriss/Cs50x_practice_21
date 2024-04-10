@@ -4,15 +4,43 @@
 #include <ctype.h>
 #include <math.h>
 #include <stdlib.h>
-
-int main()
+// Ask someone their name and print it out using a function.
+//ALLTHEWAZE
+// 1.In main  2.As a function  3.no input/outpuT  #4.input  5.output  6.input/output 7. Save output as a variable
+void my()
 {
-	
-	printf("gOODBEY %s \n", get_string("WHat is your name " ));
+	char name[  7];
+	printf(" What is your name ? ");
+	scanf("%6s",name);
+	printf("Hello %s\n  ",name  );
+}
 
-	//  Absolute file path
+int main() 
+{
+	char * x = my();
+	return x;
+}
+/*
+void my() {
+    char name[100]; // Assuming a maximum input length of 99 characters
+    
+    printf("What is your name? ");
+    scanf("%99s", name); // Read at most 99 characters to prevent buffer overflow
+
+    printf("Hello %s\n", name);
+}
+
+int main() {
+    my();
+    return 0;
+}
+*/
+
+
+//  Absolute file path
 	// /home/maurizio/Desktop/Cs50x_practice_21/AAtest.c
 	
 	// Terminal command 
 	//  gcc -o AAtest /home/maurizio/Desktop/Cs50x_practice_21/AAtest.c -I../libcs50/src -L../libcs50 -lcs50
-}
+	
+	//Then run ./AAtest
