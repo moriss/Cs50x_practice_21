@@ -6,30 +6,24 @@ You are going to be working on the files in this repo to convert them into a mor
 
 This file explains where you are. It will also be a chronological reference point as to the tasks you've had to carry out such as cloning github locally and using the cs50 library locally etc, and where you have put instructions/guides on how to do these. 
 
-I don't think you need the cs50_story file as well since it just makes things more confusing. 
-
 I'll try and keep quick reference info at the top of this file and otherwise show a chronological block of important notes with the latest on top. 
 
 So I should be able to know fairly quickly, what stage I am at in this repo by looking at the most up to date block of info.
+
+Status: Working through 2.basics file.
 #######################
 
 
 
-9th April 24
-So I moved any important information from cs50_story to here and now the l.cs50_story file just contains the words "file not in use"
 
+
+9th April 24
 Then move onto working through the 2.basics file.
 
-You are using AAtest.c for your code examples.ge
+
 
 Looking forward, Should we consider simplifying this repo into an easy look-up reference for C code?
-For each strip of code we could consider different scenarios, something like:
-1. Written directly into main
-2. Written with an input and no output
-3. Written as a function with an ouput but no input (if possible)
-4. Written with both an input and output
-5. Save the input into a variable.
-You may well need to ammend the base code to adjust for these different scenarios.
+
 
 
 
@@ -37,8 +31,6 @@ You may well need to ammend the base code to adjust for these different scenario
 
 
 OLDER
-
-
 12th february 24
 A VERY IMPORTANT UPDATE
 You have created a cs50_story file which offers a more comprehensive reference to your journey through coding and all it entails. Once you feel you have a decent mastery of something then it can be added to other files in a more susinct way.
