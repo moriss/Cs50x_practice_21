@@ -7,15 +7,19 @@
 // Ask someone their name and print it out using a function.
 //ALLTHEWAZE
 // 1.In main  2.As a function  3.no input/outpuT  #4.input  5.output  6.input/output 7. Save output as a variable
-int main(int argc , char*argv[])
+
+
+	int main(int argc, char* argv[])
 {
-	if(argc >1)
+	if (argc ==3)
 	{
-	printf("Hello %s\n",argv[1]);
+	int a = atoi(argv[1]) + atoi(argv[2]);
+		printf("%i " , a);
 	}
 	else
-	printf("Hello stranger\n");
+	printf("You have no additional inputs after ./filename \n");
 }
+
 
 /*
 void my() {
@@ -38,6 +42,7 @@ int main() {
 	// /home/maurizio/Desktop/Cs50x_practice_21/AAtest.c
 	
 	// Terminal command 
-	//  gcc -o AAtest /home/maurizio/Desktop/Cs50x_practice_21/AAtest.c -I../libcs50/src -L../libcs50 -lcs50
+	//  gcc -o AAtest /home/maurizio/Desktop/Cs50x_practice_21/AAtest.c -I../libcs50/src -L../libcs50 -lcs50ls
+	
 	
 	//Then run ./AAtest

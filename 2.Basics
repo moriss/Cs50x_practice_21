@@ -1,6 +1,40 @@
-
+The beginning
+Pseudo code
+1.function detail 
+my_function(int a,int b)
+ answer is a+b
+ return answer
+ 
+ 2.	Allocate space in memory
+       int a, int b
+ 
+ 3. 	Get user input	
+ 	What is your first_number ()
+ 	what is your second_number()
+ 	
+ 4. 	Run user's value through the function and save it in a variable
+ 	a = my_function(fist_number , second_number)
 
 Stick with AAtest.c in Cs50x_practice_21 for working through/categorizing code. 
+
+
+part transition to real code.
+int my_function(int a,int b)
+{
+	int answer = a + b;
+	return answer;
+}
+
+int main()
+{
+	int f,g;
+	f = ("What is your first_number?")
+	g = ("What is your secong_number?)
+	
+	int result = my_function();
+}
+
+
 
 
 These are the headers to use for you .c file
