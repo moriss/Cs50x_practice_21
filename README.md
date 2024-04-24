@@ -1,4 +1,6 @@
-9th April 24
+24th April 24
+
+You are currently trying to work out the contents of the make file and the notes for this is in symbols
 
 Below hash block stays on top but can be changed. Updates are latest on top.
 #####################
