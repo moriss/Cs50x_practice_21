@@ -3,4 +3,41 @@
 %  :  For format strings ,  modulus operator ' wildcard in makefiles
 
 stopped here
-Certainly! Below is a simple 
+Absolutely! A Makefile can help simplify the compilation 
+
+
+This is the code that needs more explaining
+# Makefile
+
+# Compiler
+CC = gcc
+
+# Compiler flags
+CFLAGS = -Wall -Wextra -g
+
+# Target executable
+TARGET = name
+
+# Source files
+SRCS = main.c
+
+# Object files
+OBJS = $(SRCS:.c=.o)
+
+# Include directory
+INCLUDES = -I/path/to/cs50
+
+# Libraries
+LIBS = -lcs50
+
+all: $(TARGET)
+
+$(TARGET): $(OBJS)
+	$(CC) $(CFLAGS) $(INCLUDES) -o $(TARGET) $(OBJS) $(LIBS)
+
+%.o: %.c
+	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
+
+clean:
+	rm -f $(OBJS) $(TARGET)
+
