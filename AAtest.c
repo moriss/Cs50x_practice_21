@@ -8,6 +8,7 @@
 //ALLTHEWAZE
 // 1.In main  2.As a function  3.no input/outpuT  #4.input  5.output  6.input/output 7. Save output as a variable
 
+
 	int main(int argc, char* argv[])
 {
 	if (argc ==3)
@@ -18,6 +19,7 @@
 	else
 	printf("You have no additional inputs after ./filename \n");
 }
+
 
 /*
 void my() {
