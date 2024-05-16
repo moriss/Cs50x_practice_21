@@ -15,7 +15,8 @@ So I should be able to know fairly quickly, what stage I am at in this repo by l
 Status: Working through 2.basics file.
 #######################
 
-
+23rd April 2024
+Working through chat gpt, currently trying to understand symbols and their use in programming. % $ etc.
 
 
 

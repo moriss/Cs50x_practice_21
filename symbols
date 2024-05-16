@@ -1,8 +1,9 @@
-
+% = Data type and position. Modulous operator(The remainder of a division), wildcard characters in a makefile
 
 %  :  For format strings ,  modulus operator ' wildcard in makefiles
 
 stopped here
+
 Absolutely! A Makefile can help simplify the compilation 
 
 
@@ -40,4 +41,7 @@ $(TARGET): $(OBJS)
 
 clean:
 	rm -f $(OBJS) $(TARGET)
+
+=======
+Certainly! Below is a simple 
 
