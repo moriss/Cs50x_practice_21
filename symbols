@@ -1,3 +1,4 @@
+Below is now at google drive/coding/the make file
 % = Data type and position. Modulous operator(The remainder of a division), wildcard characters in a makefile
 
 %  :  For format strings ,  modulus operator ' wildcard in makefiles
@@ -12,6 +13,7 @@ This is the code that needs more explaining
 
 # Compiler
 CC = gcc
+Below is now at google drive/coding/the make file
 
 # Compiler flags
 CFLAGS = -Wall -Wextra -g
