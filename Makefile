@@ -1,33 +1,25 @@
-# Compiler and flags
+# Compiler
 CC = gcc
-CFLAGS = -Wall -Wextra -I../libcs50/src
 
-# Directories
+# Paths
+CS50_PATH = libcs50
 SRC_DIR = .
-OBJ_DIR = obj
-LIB_DIR = ../libcs50
 
-# Source files and object files
-SRCS = $(wildcard $(SRC_DIR)/*.c) $(LIB_DIR)/src/cs50.c
-OBJS = $(patsubst $(SRC_DIR)/%.c,$(OBJ_DIR)/%.o,$(SRCS))
+# Compiler and linker flags
+CFLAGS = -Wall -Wextra -I$(CS50_PATH)/src
+LDFLAGS = $(CS50_PATH)/build/lib/libcs50.a
 
-# Default rule
-all: tic
+# Target executable
+TARGET = try
 
-# Rule for linking the final executable
-tic: $(OBJS)
-    $(CC) $(CFLAGS) -o tic $(OBJS) -L$(LIB_DIR) -lcs50
+# Default rule to build the target
+all: $(TARGET)
 
-# Rule for compiling .c files to .o files
-$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
-    @mkdir -p $(OBJ_DIR)
-    $(CC) $(CFLAGS) -c $< -o $@
+# Rule to build the target from the .c file
+$(TARGET): $(SRC_DIR)/try.c
+	$(CC) $(CFLAGS) -o $@ $< $(LDFLAGS)
 
-# Rule for compiling libcs50 source file
-$(LIB_DIR)/src/cs50.o: $(LIB_DIR)/src/cs50.c
-    $(CC) $(CFLAGS) -c $< -o $@
-
-# Clean rule
-.PHONY: clean
+# Clean up build artifacts
 clean:
-    rm -f $(OBJ_DIR)/*.o tic
+	rm -f $(TARGET)
+

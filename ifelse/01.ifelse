@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<cs50.h>
+//Use an ifelse statement to test if user's name begins with the letter 'm'.
+int main()
+{
+char* x = get_string("What is your name? ");
+        if(x[0]=='m')
+        {
+                printf("Your name starts with an %c \n ",x[0]);
+        }
+        else
+        {
+                printf("Your name does not begin with an 'm'. It begins with the letter %c \n" , x[0]);
+
+        }
+}
+

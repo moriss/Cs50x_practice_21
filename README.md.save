@@ -1,33 +1,14 @@
-9th September 24
-######################################
-To run your code locally, you need to download the cs50 library and possibly compile the libraries then also create your own makefile to run your code using thecs50 library. 
-You have managed to do this successfully. 
+18th August 24
+You ran into problems with the makefile. This is required to be able to run C locally in the terminal. You first need to clone the cs50 library. 
 
-The way you have structured this is to have the libcs50 library inside the Cs50x_practice_21 repo. Your try.c file is in the same main Cs50x_practice_21 folder along with the makefile. This is the file you initially use to try out your code.  
+The way you have structured this is to have the libcs50 library inside the Cs50x_practice_21 repo. Your try.c file is in the same main Cs50x_practice_21 folder along with the makefile. 
 
 The makefile (with instructions including cloning the cs50 library) are at drive/coding/makefile_carl.
+It might be a good idea to clone the cs50 library again elsewhere and see if you can get the makefile to work. Plz refer to the google drive location above. This isn't a memory test. You are testing that your notes are effective. 
 
-You also have written notes in the office.
-#####################################
 
-Below are your running notes. Latest on top
-11th September 24
-You successfully wrote a function in cs50x/ifelse/02.ifelse. You need to right up your errors and fixes inside an error file and also figure out if you can return something more useful than simply return 0;
-You might try and re-create your errors. 
-1. One curly bracket was the wrong way round
-2. You forgot a comma at the end of the first printf variable (x)
-3. "Control reaches end of non void function" You forgot to add "return 0" at the end of your function. 
-So, re-create these errors and paste the error message in your error log.
 
- 
-9th september 24
-Shall we now organise your code into neat folders? Lets try. 
 
-You have renamed the current file you are working through by adding an x at the beginning, (xifelse). So you know which one to come back to. 
-The plan is to put the code in the xifelse file into your newly created ifelse folder and number them for ease of difficulty. Difficulty may simply mean puttin g your code into its own function and calling it in main.
-
-Before moving your code over to its own file inside the ie ifelse folder, test the code in try.c first. Tip: It helps to hand write the code before typing it.  
-Also keep the instruction in try.c so you can repeat these collected instructions (one per visit).
 
 24th April 24
 

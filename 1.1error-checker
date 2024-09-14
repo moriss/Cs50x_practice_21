@@ -1,4 +1,19 @@
 Error checker
+The easiest way to use this file is to paste actual error messages you experience and write down the fix alongside it. 
+
+September 24
+expected declaration specifiers or ‘...’ before string constant
+I place a closing curly brace the wrong way round.
+
+expected ‘)’ before ‘x’
+I forgot the comma in printf between the string and the variable.
+
+control reaches end of non-void function
+The output to my function is char (char* my()). This error occured because I did
+ not add a return before the end closing brace. Instead of having to add a retur
+n value, you can simply change your function to  void my() In this case, you fun
+ction won't return a value.
+
 
 
 Here I have noted down some common errors I make in my code. It's useful to read over it every now and then to cut down on the time in identifying and correcting 

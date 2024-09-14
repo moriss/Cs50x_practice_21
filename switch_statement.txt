@@ -1,0 +1,156 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <unistd.h>
+//Create a Switch statement to assess a number's value between 1 and 3, or between 4 and 7, or between 8 and 10, or defualt to 'too high'.
+
+int main (void)
+{
+        int n = get_int("Enter a number between 1 and 10: ");//Get user input
+        
+        switch (n) //switch on the value of 'n' as follows...
+        {
+        case 1 :
+        case 2 :
+        case 3 :
+        printf("Your number is small\n");//Print this, where the user's number is between 1 and 3
+        break ;//program stops here
+        
+        case 4 :
+        case 5 :
+        case 6 :
+        printf("Your number is medium\n");//Print this, where the user's number is between 4 and 6
+        break;//program stops here
+        
+        
+        case 7 :
+        case 8 :
+        case 9 :
+        case 10 :
+        printf("Your number is high\n");//Print this, where the user's number is between 7 and 10
+        break;//program stops here
+        
+        default: printf("Your number is invalid\n");//Print this, where the user's number is not between 1 and 10  
+        }
+}
+//############################################################
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <unistd.h>
+//Switch statement to assess a numbers value between 1 and 3, or between 4 and 7, or between 8 and 10, or too high.
+
+int main (void)
+{
+        int n = get_int("Enter a number between 1 and 10: ");//Get user input
+        
+        switch (n) //switch on the value of 'n' as follows...('n' is  input)
+        {
+        case 1 : printf("1"); break;//if input is 1, then print 1. program stops here 'break'
+        case 2 :printf("2"); break;//if input is 2, then print 2.  program stops here 'break'
+        case 3 :printf("3"); break;//if input is 3, then print 3.  program stops here 'break' etc etc etc
+        
+        case 4 :printf("4"); break;
+        case 5 :printf("5"); break;
+        case 6 :printf("6"); break;
+        
+        case 7 :printf("7"); break;
+        case 8 :printf("8"); break;
+        case 9 :printf("9"); break;
+        case 10 :printf("10"); break;
+        
+        default: printf("Your number is invalid\n");//Print this, where the user's number is not between 1 and 10
+        
+        }
+}
+//#################################################################
+#include <cs50.h> //Switch
+#include <stdio.h>//
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <math.h>
+//use of curly braces also works
+int main(void)
+{
+  int a = get_int("number ");
+  switch (a)
+  {
+    case 1:
+      {
+        printf("one");
+        break;
+       }
+        case 2:
+      {
+        printf("two");
+        break;
+       }
+         case 3:
+      {
+        printf("three");
+        break;
+      }
+         default:
+       {
+          printf("sorry");
+          break;
+        }
+  }
+
+}
+
+//#########################################################
+#include <cs50.h> //Switch
+#include <stdio.h>//
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <math.h>
+//fall through each case in a switch function
+
+int main (void)
+{
+  int a = get_int("number ");//get input from user
+  switch (a)//User's input is used as switch function input
+  {
+    case 1:
+      {
+        printf("5 ");//without using 'break', the program runs all the way down to the end
+		sleep(1);//This delays each step by 1 second. (Perfect for a rocket launch)
+       }
+    case 2:
+      {
+        printf("4 ");
+		sleep(1);
+       }
+    case 3:
+      {
+        printf("3 ");
+        sleep(1);
+      }
+	 case 4:
+      {
+        printf("2 ");
+        sleep(1);
+      }
+	 case 5:
+      {
+        printf("1 ");
+        sleep(1);
+      }
+         default:
+       {
+          printf("blast off! \n");
+          
+        }
+  }
+}
