@@ -5,8 +5,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <math.h>
-
-//2. Use your own function with input and output
+//Test if someone's name begins with 'M'
+//As your own function
 char my(char * x);//Prototype goes here
 int main (void)
 {

@@ -1,16 +1,22 @@
 9th September 24
 ######################################
-To run your code locally, you need to download the cs50 library and possibly compile the libraries then also create your own makefile to run your code using thecs50 library. 
-You have managed to do this successfully. 
+You are working your way through your cs50 files in your repo to tidy them up and create a simpler folder system. 
 
-The way you have structured this is to have the libcs50 library inside the Cs50x_practice_21 repo. Your try.c file is in the same main Cs50x_practice_21 folder along with the makefile. This is the file you initially use to try out your code.  
+The file prefixed with an x is the file you are currently working on. 
 
-The makefile (with instructions including cloning the cs50 library) are at drive/coding/makefile_carl.
+Refer to written notes as you progress through harder and harder ifelse code. 
 
-You also have written notes in the office.
+Test yourself with try.c for current and every new function you come accross. Then add the function to the try.c task list and also add the function into a categorized folder within cs50 rating it from 1 to n accordingly (see below) 
+
+each file is ordered from 01 to 02 03 04.....to rate the difficulty (within each folder). Generaly 01 is for writing directly into main, 02 is for creating your own function, 03 is for beginning to be aware of inputs and outputs and 04 is for using the output.
+
+
 #####################################
 
 Below are your running notes. Latest on top
+15th September 24
+try.c has your latest code to work on. You are trying a more difficult version with usefule input output.
+
 11th September 24
 You successfully wrote a function in cs50x/ifelse/02.ifelse. You need to right up your errors and fixes inside an error file and also figure out if you can return something more useful than simply return 0;
 You might try and re-create your errors. 
@@ -133,3 +139,19 @@ I try, whenever I can, to run a program in main then run the same program as my 
 
 Anyway, I hope beginners have a go and find this useful.
 
+##############################
+In order to run your code locally, you downloaded the cs50 library and compiled
+the libraries and also create your own makefile(Using chatgpt), to run your code
+ using thecs50 library.
+You have managed to do this successfully.
+
+The way you have structured this is to have the libcs50 library inside the Cs50x
+_practice_21 repo. Your try.c file is in the same main Cs50x_practice_21 folder
+along with the makefile. This is the file you initially use to try out your code
+.
+
+The makefile (with instructions including cloning the cs50 library) are at drive
+/coding/makefile_carl.
+
+You also have written notes in the office.
+#############################

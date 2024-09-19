@@ -1,25 +1,24 @@
 #include<stdio.h>
 #include<cs50.h>
-//Use ifelse function to test if user's name begins with 'm'. i/o if poss.
+//Test if a user's name begins with 'm' (A function with basic return output
 
-void myFunction(string j)
-{
-	char x = j[0];
-	if(x == 'm')
-		{
-			printf("Great! your name begins with %c\n ", x);
-		}
-	else
-		{
-			printf("Opps! your name doesn't begin with 'm', it begins with  %c \n" , x );
-		}
-	
-}
-
+char my(char*);
 int main()
 {
-	char * w = get_string("What is your name? I hope it begins with 'm' ");
+	char* names=get_string("Your name please ");
+	my(names);
+}
 
-	myFunction(w);
 
+char my(char* name)
+{
+	if(name[0] == 'M')
+	{
+		printf("Your name begins with %c \n ", name[0]);
+	}
+	else
+	{
+		printf("Sorry, your name begins with %c \n ", name[0]);
+	}
+return 0;
 }
